@@ -1,0 +1,21 @@
+.content {
+  position: relative;
+  margin: 110px 0 0 370px;
+  flex-grow: 1;
+  min-width: 400px;
+  background-color: lightpink;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding-right: 20px;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 1120px;
+  /* width: 100%; */
+  margin: 0;
+  padding: 0;
+}

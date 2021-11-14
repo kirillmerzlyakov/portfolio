@@ -1,0 +1,16 @@
+.menu {
+  position: fixed;
+  top: 110px;
+  left: 0;
+  width: 370px;
+  height: 100vh;
+  text-align: center;
+}
+
+.description {
+  position: fixed;
+  color: #a5a3a9;
+  text-align: left;
+  left: 20px;
+  bottom: 20px;
+}

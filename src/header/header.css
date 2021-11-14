@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+
+  height: 110px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  /* z-index: 10; */
+}
+
+.navigation {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  min-width: 350px;
+  /* background-color: lightpink; */
+}
+
+.navigation .arrowSvg {
+  height: 6px;
+  width: 21px;
+  margin-right: 5px;
+  background: url("./arrow.svg") no-repeat 0px 0px;
+}
+
+.header-main {
+  display: flex;
+  flex-grow: 1;
+  min-width: 400px;
+  align-items: center;
+  text-align: left;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  /* background-color: lightgreen; */
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: lightskyblue; */
+}
+
+.header-button {
+  display: flex;
+  padding: 10px;
+}
