@@ -52,4 +52,13 @@
 .header-button {
   display: flex;
   padding: 10px;
+  text-decoration: none;
+  color: #222;
+}
+
+.navigate-link {
+  display: flex;
+  text-decoration: none;
+  color: #222;
+  align-items: center;
 }

@@ -7,15 +7,15 @@ export class Header extends React.Component {
     return (
       <div className="header">
         <div className="navigation">
-          <Link to="/">
+          <Link className="navigate-link" to="/">
             <div className="arrowSvg"></div>
             Назад
           </Link>
         </div>
         <div className="header-main">Дарина Лачихина</div>
         <div className="header-buttons">
-          <Link to="/skinscan">
-            <div className="header-button">Портфолио</div>
+          <Link className="header-button" to="/skinscan">
+            Портфолио
           </Link>
           <div className="header-button">Обо&nbsp;мне</div>
           <div className="header-button">Контакты</div>
