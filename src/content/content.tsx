@@ -5,7 +5,18 @@ export class Content extends React.Component {
   render() {
     return (
       <div className="content">
-        {[1, 2, 3, 4, 5, 6].map((a) => this.getImageBlock(a.toString()))}
+        <div className="video-wrapper">
+          <iframe
+            src="https://player.vimeo.com/video/643858135"
+            width="1120"
+            height="630"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+            title="skin-scan-video"
+          ></iframe>
+        </div>
+        {[2, 3, 4, 5, 6].map((a) => this.getImageBlock(a.toString()))}
       </div>
     );
   }

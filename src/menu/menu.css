@@ -1,13 +1,28 @@
 .menu {
   position: fixed;
-  top: 110px;
+  display: flex;
+  flex-direction: column;
+  top: 90px;
   left: 0;
-  width: 370px;
+  width: 330px;
   height: 100vh;
-  text-align: center;
+  padding: 20px;
+}
+
+.description-block {
+}
+
+.description-header {
+  font-size: 22px;
+  line-height: 28px;
 }
 
 .description {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.author {
   position: fixed;
   color: #a5a3a9;
   text-align: left;
