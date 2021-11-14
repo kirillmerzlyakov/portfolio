@@ -27,7 +27,7 @@ export class Content extends React.Component {
     return (
       <img
         className="image"
-        src={`./skinscan/content-${number}.jpg`}
+        src={`./skinscan/${number}.jpg`}
         alt="картинка"
       ></img>
     );
