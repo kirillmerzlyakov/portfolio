@@ -15,8 +15,8 @@ export class Content extends React.Component {
       <div className="content">
         {[2, 3, 4, 5, 6].map((a) => this.getImageBlock(a.toString()))}
         <div className="video-wrapper">
-          {Object.keys(VIDEO_SOURCES).map((a) =>
-            this.getVideoBlock(a, VIDEO_SOURCES[a])
+          {Object.keys(VIDEO_SOURCES).map((titleVideo) =>
+            this.getVideoBlock(titleVideo, VIDEO_SOURCES[titleVideo])
           )}
         </div>
       </div>
