@@ -1,4 +1,5 @@
 import React from "react";
+import { Menu } from "../menu/menu";
 import "./skinscan.css";
 
 const VIDEO_SOURCES: { [key: string]: string } = {
@@ -11,6 +12,7 @@ const VIDEO_SOURCES: { [key: string]: string } = {
 
 export const SkinScan: React.FunctionComponent = (props) => (
   <div className="content-skinscan">
+    <Menu />
     {[2, 3, 4, 5, 6].map((a) => getImageBlock(a.toString()))}
     <div className="video-wrapper">
       {Object.keys(VIDEO_SOURCES).map((titleVideo) =>

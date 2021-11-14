@@ -4,6 +4,7 @@
   flex-grow: 1;
   min-width: 400px;
   flex-direction: column;
+  margin: 90px 0 0 370px;
 }
 
 .video-wrapper {
