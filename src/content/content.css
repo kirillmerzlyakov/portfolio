@@ -6,22 +6,4 @@
   min-width: 400px;
   flex-direction: column;
   padding-right: 20px;
-  font-size: 0;
-  content: "";
-  font-weight: 0;
-}
-
-.video-wrapper {
-  margin-bottom: 20px;
-}
-
-.image {
-  display: block;
-  margin: 0 auto;
-  width: 1120px;
-  font-size: 0;
-  content: "";
-  font-weight: 0;
-  margin: 0;
-  padding: 0;
 }
