@@ -15,7 +15,6 @@ export class Menu extends React.Component {
         <div className="author">
           Дарина Лачихина
           <br /> дизайнер
-          <br /> 2017 - Н.В.
         </div>
       </div>
     );
