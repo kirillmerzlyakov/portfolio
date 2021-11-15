@@ -1,11 +1,70 @@
-.mainPage {
+.main-page {
   display: flex;
-  position: relative;
+}
+
+.main-page {
+  display: flex;
+  /* position: relative; */
   flex-grow: 1;
   min-width: 400px;
   flex-direction: column;
-  padding-right: 20px;
-  margin-top: 90px;
+  margin-top: 9vh;
   height: 1000px;
-  background-color: antiquewhite;
+  color: #222;
+  padding-right: 20px;
+  /* background-color: antiquewhite; */
+}
+
+.first-main-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-main-page {
+  width: 370px;
+  min-width: 370px;
+  height: 91vh;
+  /* background-color: aquamarine; */
+  position: relative;
+}
+
+.menu-main-page-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.title-main-page {
+  /* background-color: beige; */
+  flex-grow: 1;
+  font-weight: 400;
+  font-family: Antiqua Roman;
+  letter-spacing: 0.04em;
+}
+
+.title-text-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.text-1 {
+  font-size: 150px;
+  line-height: 165px;
+  flex-grow: 2;
+  /* background-color: blue; */
+}
+.text-2 {
+  height: 100%;
+  flex-grow: 1;
+
+  /* background-color: lightblue; */
+  color: #e85211;
+
+  font-size: 80px;
+  line-height: 114px;
+}
+.text-3 {
+  font-size: 210px;
+  line-height: 211px;
+  color: #e85211;
 }

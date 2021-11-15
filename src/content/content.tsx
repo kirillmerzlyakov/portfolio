@@ -9,7 +9,6 @@ export const Сontent: React.FunctionComponent = (props) => (
   <div className="content">
     <Routes>
       <Route path="/skinscan" element={<SkinScan />} />
-      <Route path="/" element={<MainPage />} />
     </Routes>
   </div>
 );
