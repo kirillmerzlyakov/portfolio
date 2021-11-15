@@ -23,9 +23,13 @@ const renderMenuBlock = () => (
 const renderTitleBlock = () => (
   <div className="title-main-page">
     <div className="title-text-wrapper">
-      <div className="text-1">DIGITAL DESIGNER</div>
-      <div className="text-2">/INSIGHT</div>
+      <span className="text-1">
+        DIGITAL
+        <br />
+        DESIGNER
+      </span>
+      <span className="text-2">/INSIGHT</span>
     </div>
-    <div className="text-3">PORTFOLIO</div>
+    <span className="text-3">PORTFOLIO</span>
   </div>
 );

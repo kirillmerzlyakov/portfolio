@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: "Antiqua Roman";
+  src: url("./fonts/Antiqua\ Roman/antiqua_roman.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: "Mont";
+  src: url("./fonts/Mont/Mont-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}

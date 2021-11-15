@@ -1,16 +1,16 @@
 import React from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
-
 export class Header extends React.Component {
+  componentDidUpdate() {
+    console.log("rerender");
+  }
+
   render() {
     return (
       <div className="header">
         <div className="navigation">
-          <Link className="navigate-link" to="/">
-            <div className="arrowSvg"></div>
-            Назад
-          </Link>
+          {window.location.pathname !== "/" && renderBackArrow()}
         </div>
         <div className="header-main">Дарина Лачихина</div>
         <div className="header-buttons">
@@ -24,3 +24,10 @@ export class Header extends React.Component {
     );
   }
 }
+
+const renderBackArrow = () => (
+  <Link className="navigate-link" to="/">
+    <div className="arrowSvg"></div>
+    Назад
+  </Link>
+);

@@ -50,20 +50,17 @@
 .text-1 {
   font-size: 150px;
   line-height: 165px;
-  flex-grow: 2;
+  margin-right: 10px;
 }
 .text-2 {
-  display: block;
   height: 100%;
-  flex-grow: 1;
   color: #e85211;
-
   font-size: 80px;
   line-height: 114px;
 }
 .text-3 {
-  display: block;
-  font-size: 208px;
+  font-size: 222px;
   line-height: 211px;
   color: #e85211;
+  /* background-color: lightslategray; */
 }
