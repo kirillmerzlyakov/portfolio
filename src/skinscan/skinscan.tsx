@@ -12,7 +12,14 @@ const VIDEO_SOURCES: { [key: string]: string } = {
 
 export const SkinScan: React.FunctionComponent = (props) => (
   <div className="content-skinscan">
-    <Menu />
+    <Menu
+      name={"Скиньскан.рф"}
+      city={"Екатеринбург"}
+      year={"2021"}
+      description={
+        "блабалбалбалбалбалаблабла блаблб албафыолврф олырвлдфорывлфоыролдфы рвфолыврфолдвр"
+      }
+    />
     {[2, 3, 4, 5, 6].map((a) => getImageBlock(a.toString()))}
     <div className="video-wrapper">
       {Object.keys(VIDEO_SOURCES).map((titleVideo) =>

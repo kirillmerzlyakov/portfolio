@@ -1,22 +1,22 @@
 import React from "react";
 import "./menu.css";
 
-export class Menu extends React.Component {
-  render() {
-    return (
-      <div className="menu">
-        <div className="description-block">
-          <div className="description-header">СкиньСкан.рф</div>
-          <div>Екатеринбург | 2021</div>
-          <div className="description">
-            бла блаблаблабал абла блаблаблабалблабалабла блаблаблабалблабалабла
-          </div>
-        </div>
-        <div className="author">
-          Дарина Лачихина
-          <br /> дизайнер
-        </div>
-      </div>
-    );
-  }
+interface Props {
+  name: string;
+  city: string;
+  year: string;
+  description: string;
 }
+export const Menu: React.FC<Props> = (props) => (
+  <div className="menu">
+    <div className="description-block">
+      <div className="description-header">{props.name}</div>
+      <div>{`${props.city} | ${props.year}`}</div>
+      <div className="description">{props.description}</div>
+    </div>
+    <div className="author">
+      Дарина Лачихина
+      <br /> дизайнер
+    </div>
+  </div>
+);
