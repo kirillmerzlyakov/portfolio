@@ -5,7 +5,8 @@
   min-width: 400px;
   flex-direction: column;
   margin: 9vh 0 0 370px;
-  background-color: brown;
+  padding-top: 24px;
+  /* background-color: brown; */
 }
 
 .video-wrapper {
@@ -13,7 +14,7 @@
 }
 
 .img-wrapper {
-  margin: 1px 0;
+  /* margin: 1px 0; */
 }
 
 .image {

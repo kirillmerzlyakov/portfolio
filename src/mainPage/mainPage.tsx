@@ -1,11 +1,18 @@
 import React from "react";
 import "./mainPage.css";
+import { ContentItem } from "./contentItem";
 
 export const MainPage: React.FunctionComponent = (props) => (
   <div className="main-page">
     <div className="first-main-page">
       {renderMenuBlock()}
       {renderTitleBlock()}
+    </div>
+    <div className="items-wrapper">
+      <ContentItem name="Скиньскан.рф" imgName="" route="/skinscan" />
+      <ContentItem name="asqqweqweqwe" imgName="" route="/skinscan" />
+      <ContentItem name="asd" imgName="" route="/skinscan" />
+      <ContentItem name="asd" imgName="" route="/skinscan" />
     </div>
   </div>
 );

@@ -62,5 +62,34 @@
   font-size: 222px;
   line-height: 211px;
   color: #e85211;
-  /* background-color: lightslategray; */
+}
+
+.items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 24px;
+  /* background-color: coral; */
+}
+
+.content-item {
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  /* border: chartreuse 1px solid; */
+}
+
+.content-item-header {
+  padding: 5px 0;
+}
+
+.content-item-img {
+  width: 100%;
+  height: 200px;
+  background-color: gray;
+}
+
+.content-item-link {
+  display: block;
 }
