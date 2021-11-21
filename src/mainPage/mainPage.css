@@ -8,7 +8,6 @@
   min-width: 400px;
   flex-direction: column;
   margin-top: 9vh;
-  height: 1000px;
   color: #222;
   padding-right: 20px;
 }
@@ -81,7 +80,13 @@
 }
 
 .content-item-header {
-  padding: 5px 0;
+  display: flex;
+  padding: 20px 0;
+}
+
+.content-item-link {
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 .content-item-img {

@@ -9,10 +9,15 @@ export const MainPage: React.FunctionComponent = (props) => (
       {renderTitleBlock()}
     </div>
     <div className="items-wrapper">
-      <ContentItem name="Скиньскан.рф" imgName="" route="/skinscan" />
-      <ContentItem name="asqqweqweqwe" imgName="" route="/skinscan" />
-      <ContentItem name="asd" imgName="" route="/skinscan" />
-      <ContentItem name="asd" imgName="" route="/skinscan" />
+      <ContentItem
+        name="Скиньскан.рф"
+        imgName=""
+        route="/skinscan"
+        sourceLink="https://скиньскан.рф"
+      />
+      <ContentItem name="asqq" imgName="" route="/skinscan" sourceLink="" />
+      <ContentItem name="asd" imgName="" route="/skinscan" sourceLink="" />
+      <ContentItem name="asd" imgName="" route="/skinscan" sourceLink="" />
     </div>
   </div>
 );
