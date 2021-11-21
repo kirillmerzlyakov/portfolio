@@ -15,9 +15,9 @@ export const MainPage: React.FunctionComponent = (props) => (
         route="/skinscan"
         sourceLink="https://скиньскан.рф"
       />
-      <ContentItem name="asqq" imgName="" route="/skinscan" sourceLink="" />
-      <ContentItem name="asd" imgName="" route="/skinscan" sourceLink="" />
-      <ContentItem name="asd" imgName="" route="/skinscan" sourceLink="" />
+      <ContentItem name="BRICS" imgName="" route="/" sourceLink="" />
+      <ContentItem name="asd" imgName="" route="/" sourceLink="" />
+      <ContentItem name="asd" imgName="" route="/" sourceLink="" />
     </div>
   </div>
 );

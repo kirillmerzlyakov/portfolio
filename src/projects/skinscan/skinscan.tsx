@@ -20,12 +20,20 @@ export const SkinScan: React.FunctionComponent = (props) => (
         "блабалбалбалбалбалаблабла блаблб албафыолврф олырвлдфорывлфоыролдфы рвфолыврфолдвр"
       }
     />
+    {getVideoBlock("Act-Contract-0", VIDEO_SOURCES["Act-Contract-0"])}
+    {"text.."}
+    {getVideoBlock("Act-Contract-1", VIDEO_SOURCES["Act-Contract-1"])}
+
     {[2, 3, 4, 5, 6].map((a) => getImageBlock(a.toString()))}
-    <div className="video-wrapper">
-      {Object.keys(VIDEO_SOURCES).map((titleVideo) =>
-        getVideoBlock(titleVideo, VIDEO_SOURCES[titleVideo])
-      )}
-    </div>
+    {"text.."}
+    {getVideoBlock("Act-Contract-2", VIDEO_SOURCES["Act-Contract-2"])}
+    {"text.."}
+    {[8, 9].map((a) => getImageBlock(a.toString()))}
+    {"text.."}
+
+    {getImageBlock("10")}
+    {"text.."}
+    {[11, 12].map((a) => getImageBlock(a.toString()))}
   </div>
 );
 

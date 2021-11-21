@@ -7,7 +7,7 @@ export const Header: React.FC = (props) => (
     <div className="navigation">{renderBackArrow()}</div>
     <div className="header-main">Дарина Лачихина</div>
     <div className="header-buttons">
-      <Link className="header-button" to="/skinscan">
+      <Link className="header-button" to="/">
         Портфолио
       </Link>
       <div className="header-button">Обо&nbsp;мне</div>
