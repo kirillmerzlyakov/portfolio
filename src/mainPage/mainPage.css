@@ -68,7 +68,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 24px;
-  /* background-color: coral; */
 }
 
 .content-item {
@@ -76,7 +75,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  /* border: chartreuse 1px solid; */
 }
 
 .content-item-header {
@@ -91,7 +89,7 @@
 
 .content-item-img {
   width: 100%;
-  height: 200px;
+  height: 440px;
   background-color: gray;
 }
 
