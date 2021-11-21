@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu } from "../../menu/menu";
+import { Menu } from "../../components/menu/menu";
 import "./skinscan.css";
 
 const VIDEO_SOURCES: { [key: string]: string } = {

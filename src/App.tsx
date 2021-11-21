@@ -1,6 +1,6 @@
 import "./App.css";
-import { Header } from "./header/header";
-import { Сontent } from "./content/content";
+import { Header } from "./components/header/header";
+import { Сontent } from "./components/content/content";
 import { Route, Routes } from "react-router";
 import { MainPage } from "./mainPage/mainPage";
 

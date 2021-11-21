@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu } from "../../menu/menu";
+import { Menu } from "../../components/menu/menu";
 import "./brics.css";
 
 export const Brics: React.FunctionComponent = (props) => (
