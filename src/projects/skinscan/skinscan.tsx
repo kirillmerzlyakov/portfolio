@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu } from "../menu/menu";
+import { Menu } from "../../menu/menu";
 import "./skinscan.css";
 
 const VIDEO_SOURCES: { [key: string]: string } = {
@@ -31,11 +31,13 @@ export const SkinScan: React.FunctionComponent = (props) => (
 
 function getImageBlock(number: string) {
   return (
-    <img
-      className="image"
-      src={`./skinscan/${number}.jpg`}
-      alt="картинка"
-    ></img>
+    <div className="img-wrapper">
+      <img
+        className="image"
+        src={`./skinscan/${number}.jpg`}
+        alt="картинка"
+      ></img>
+    </div>
   );
 }
 
