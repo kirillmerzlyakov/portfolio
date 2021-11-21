@@ -10,6 +10,10 @@ const VIDEO_SOURCES: { [key: string]: string } = {
     "https://player.vimeo.com/video/645741574?h=f4882dc24c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 };
 
+const TEXT_BLOCK = [
+  "Для входа в свой кошелек необходимо создать и подтвердить мнемони-ческую фразу. Для этого я придумал интерактивный сценарий.",
+];
+
 export const SkinScan: React.FunctionComponent = (props) => (
   <div className="content-skinscan">
     <Menu
@@ -20,24 +24,47 @@ export const SkinScan: React.FunctionComponent = (props) => (
         "блабалбалбалбалбалаблабла блаблб албафыолврф олырвлдфорывлфоыролдфы рвфолыврфолдвр"
       }
     />
-    {getVideoBlock("Act-Contract-0", VIDEO_SOURCES["Act-Contract-0"])}
-    {"text.."}
-    {getVideoBlock("Act-Contract-1", VIDEO_SOURCES["Act-Contract-1"])}
+    {renderVideoBlock("Act-Contract-0", VIDEO_SOURCES["Act-Contract-0"])}
+    <div className="text-wrapper">
+      {renderTextBlock(TEXT_BLOCK[0])}
+      {renderTextBlock(TEXT_BLOCK[0])}
+    </div>
+    {renderVideoBlock("Act-Contract-1", VIDEO_SOURCES["Act-Contract-1"])}
 
-    {[2, 3, 4, 5, 6].map((a) => getImageBlock(a.toString()))}
-    {"text.."}
-    {getVideoBlock("Act-Contract-2", VIDEO_SOURCES["Act-Contract-2"])}
-    {"text.."}
-    {[8, 9].map((a) => getImageBlock(a.toString()))}
-    {"text.."}
+    {[2, 3, 4, 5, 6].map((a) => renderImageBlock(a.toString()))}
 
-    {getImageBlock("10")}
-    {"text.."}
-    {[11, 12].map((a) => getImageBlock(a.toString()))}
+    <div className="text-wrapper">
+      {renderTextBlock(TEXT_BLOCK[0])}
+      {renderTextBlock(TEXT_BLOCK[0])}
+    </div>
+    {renderVideoBlock("Act-Contract-2", VIDEO_SOURCES["Act-Contract-2"])}
+
+    <div className="text-wrapper">
+      {renderTextBlock(TEXT_BLOCK[0])}
+      {renderTextBlock(TEXT_BLOCK[0])}
+    </div>
+    {[8, 9].map((a) => renderImageBlock(a.toString()))}
+
+    <div className="text-wrapper">
+      {renderTextBlock(TEXT_BLOCK[0])}
+      {renderTextBlock(TEXT_BLOCK[0])}
+    </div>
+
+    {renderImageBlock("10")}
+
+    <div className="text-wrapper">
+      {renderTextBlock(TEXT_BLOCK[0])}
+      {renderTextBlock(TEXT_BLOCK[0])}
+    </div>
+    {[11, 12].map((a) => renderImageBlock(a.toString()))}
   </div>
 );
 
-function getImageBlock(number: string) {
+function renderTextBlock(text: string) {
+  return <div className="text-block">{text}</div>;
+}
+
+function renderImageBlock(number: string) {
   return (
     <div className="img-wrapper">
       <img
@@ -49,7 +76,7 @@ function getImageBlock(number: string) {
   );
 }
 
-function getVideoBlock(title: string, src: string) {
+function renderVideoBlock(title: string, src: string) {
   return (
     <iframe
       src={src}

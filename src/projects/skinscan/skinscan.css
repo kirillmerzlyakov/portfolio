@@ -27,3 +27,13 @@
   margin: 0;
   padding: 0;
 }
+
+.text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 70px 40px 0;
+}
+
+.text-block {
+  width: 408px;
+}
