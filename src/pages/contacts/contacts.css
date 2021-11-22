@@ -1,70 +1,59 @@
 .contacts {
   display: flex;
+  flex-direction: row;
   flex-grow: 1;
-  min-width: 400px;
-  flex-direction: column;
+  min-width: 1400px;
   margin-top: 9vh;
   color: #222;
   padding-right: 20px;
-  height: 100vh;
+  height: 91vh;
 }
 
-.first-main-page {
-  display: flex;
-  flex-direction: row;
-}
-
-.menu-main-page {
+.contact-page {
   width: 370px;
   min-width: 370px;
   height: 91vh;
   position: relative;
 }
 
-.menu-main-page-text {
+.contact-page-text {
   position: absolute;
   bottom: 60px;
   left: 20px;
   color: #bbb;
 }
 
-.title-main-page {
+.contact-title {
   display: block;
   overflow: hidden;
   flex-grow: 1;
-  font-weight: 400;
-  font-family: Antiqua Roman;
-  letter-spacing: 0.04em;
 }
 
-.title-text-wrapper {
+.contact-title-text-wrapper {
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-family: Antiqua Roman;
   display: flex;
   align-items: flex-end;
   padding: 50px 0;
 }
 
-.text-1 {
-  font-size: 150px;
-  line-height: 165px;
-  margin-right: 10px;
-}
-.text-2 {
-  height: 100%;
-  color: #e85211;
-  font-size: 80px;
-  line-height: 114px;
-}
-.text-3 {
-  font-size: 222px;
-  line-height: 211px;
-  color: #e85211;
+.contact-text-1 {
+  font-size: 120px;
+  line-height: 132px;
 }
 
-.items-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 24px;
+.contact-text-2 {
+  color: #e85211;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 114px;
+  margin-left: 30px;
+}
+
+.contact-text-3 {
+  font-size: 110px;
+  line-height: 157px;
 }
 
 .content-item {
@@ -74,22 +63,16 @@
   margin-bottom: 30px;
 }
 
-.content-item-header {
-  display: flex;
-  padding: 20px 0;
+.contact-block {
+  font-family: Mont;
+  font-size: 22px;
+  line-height: 28px;
 }
 
-.content-item-link {
-  text-decoration: none;
-  margin-right: 20px;
+.contact-block1 {
+  margin-bottom: 24px;
 }
 
-.content-item-img {
-  width: 100%;
-  height: 440px;
-  background-color: gray;
-}
-
-.content-item-link {
-  display: block;
+.contact-block2 {
+  margin-bottom: 10px;
 }

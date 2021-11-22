@@ -11,6 +11,6 @@ export const Сontent: React.FunctionComponent = (props) => (
       <Route path="/skinscan" element={<SkinScan />} />
       <Route path="/brics" element={<Brics />} />
     </Routes>
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
