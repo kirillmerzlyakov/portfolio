@@ -1,16 +1,16 @@
-import React from "react";
 import "./contacts.css";
 
-export const Contacts: React.FunctionComponent = (props) => (
+export const Contacts = () => (
   <div className="contacts">
-    {renderMenuBlock()}
+    <div className="contact-page">
+      <img
+        className="avatar"
+        src={`./avatar.png`}
+        alt="картинка"
+        width="290"
+      ></img>
+    </div>
     {renderTitleBlock()}
-  </div>
-);
-
-const renderMenuBlock = () => (
-  <div className="contact-page">
-    <img className="avatar" src={`./avatar.png`} alt="картинка" width="290"></img>
   </div>
 );
 
