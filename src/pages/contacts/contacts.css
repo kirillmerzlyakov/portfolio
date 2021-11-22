@@ -16,6 +16,11 @@
   position: relative;
 }
 
+.avatar {
+  margin-top: 90px;
+  margin-left: 20px;
+}
+
 .contact-page-text {
   position: absolute;
   bottom: 60px;
@@ -38,12 +43,10 @@
   padding: 50px 0;
 }
 
-
 .contact-text-1 {
   font-size: 150px;
   line-height: 184px;
 }
-
 
 .contact-text-2 {
   color: #e85211;

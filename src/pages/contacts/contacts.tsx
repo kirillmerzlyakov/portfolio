@@ -10,7 +10,7 @@ export const Contacts: React.FunctionComponent = (props) => (
 
 const renderMenuBlock = () => (
   <div className="contact-page">
-    <div className="contact-page-text"></div>
+    <img className="avatar" src={`./avatar.png`} alt="картинка" width="290"></img>
   </div>
 );
 
