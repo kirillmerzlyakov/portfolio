@@ -4,13 +4,10 @@
   flex-direction: column;
   top: 9vh;
   left: 0;
-  width: 330px;
+  width: 310px;
   height: 100vh;
-  padding: 20px;
+  padding: 20px 40px 20px 20px;
   z-index: 10;
-}
-
-.description-block {
 }
 
 .description-header {
