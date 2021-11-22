@@ -11,7 +11,11 @@ export const Header: React.FC = (props) => (
         Портфолио
       </Link>
       <div className="header-button">Обо&nbsp;мне</div>
-      <div className="header-button">Контакты</div>
+      <div className="header-button">
+        <Link className="header-button" to="/contacts">
+          Контакты
+        </Link>
+      </div>
     </div>
   </div>
 );
