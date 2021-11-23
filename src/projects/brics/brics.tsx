@@ -23,6 +23,15 @@ export const Brics: React.FunctionComponent = (props) => (
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
     {renderImageBlock(2)}
+    <div className="text-wrapper">
+      {renderTextBlock(TEXT_BLOCK[0])}
+      {renderTextBlock(TEXT_BLOCK[0])}
+    </div>
+    {[3, 4, 5].map((i) => renderImageBlock(i))}
+    <div className="text-wrapper">
+      {renderTextBlock(TEXT_BLOCK[0])}
+      {renderTextBlock(TEXT_BLOCK[0])}
+    </div>
   </div>
 );
 
