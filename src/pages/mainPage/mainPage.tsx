@@ -16,7 +16,12 @@ export const MainPage: React.FunctionComponent = (props) => (
         sourceLink="https://скиньскан.рф"
       />
       <ContentItem name="BRICS" imgName="" route="/brics" sourceLink="" />
-      <ContentItem name="asd" imgName="" route="/" sourceLink="" />
+      <ContentItem
+        name="CHICAGA"
+        imgName=""
+        route="/chicaga"
+        sourceLink="https://chicaga.ru"
+      />
       <ContentItem name="asd" imgName="" route="/" sourceLink="" />
     </div>
   </div>
