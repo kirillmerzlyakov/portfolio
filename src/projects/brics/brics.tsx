@@ -16,13 +16,13 @@ export const Brics: React.FunctionComponent = (props) => (
         "блабалбалбалбалбалаблабла блаблб албафыолврф олырвлдфорывлфоыролдфы рвфолыврфолдвр"
       }
     />
-    {renderImageBlock("1")}
+    {renderImageBlock(1)}
 
     <div className="text-wrapper">
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {renderImageBlock("2")}
+    {renderImageBlock(2)}
   </div>
 );
 
@@ -30,7 +30,7 @@ function renderTextBlock(text: string) {
   return <div className="text-block">{text}</div>;
 }
 
-function renderImageBlock(number: string) {
+function renderImageBlock(number: number) {
   return (
     <div className="img-wrapper">
       <img className="image" src={`./brics/${number}.jpg`} alt="картинка"></img>

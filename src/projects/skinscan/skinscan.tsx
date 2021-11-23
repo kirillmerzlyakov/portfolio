@@ -31,7 +31,7 @@ export const SkinScan: React.FunctionComponent = (props) => (
     </div>
     {renderVideoBlock("Act-Contract-1", VIDEO_SOURCES["Act-Contract-1"])}
 
-    {[2, 3, 4, 5, 6].map((a) => renderImageBlock(a.toString()))}
+    {[2, 3, 4, 5, 6].map((a) => renderImageBlock(a))}
 
     <div className="text-wrapper">
       {renderTextBlock(TEXT_BLOCK[0])}
@@ -43,20 +43,20 @@ export const SkinScan: React.FunctionComponent = (props) => (
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {[8, 9].map((a) => renderImageBlock(a.toString()))}
+    {[8, 9].map((a) => renderImageBlock(a))}
 
     <div className="text-wrapper">
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
 
-    {renderImageBlock("10")}
+    {renderImageBlock(10)}
 
     <div className="text-wrapper">
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {[11, 12].map((a) => renderImageBlock(a.toString()))}
+    {[11, 12].map((a) => renderImageBlock(a))}
   </div>
 );
 
@@ -64,7 +64,7 @@ function renderTextBlock(text: string) {
   return <div className="text-block">{text}</div>;
 }
 
-function renderImageBlock(number: string) {
+function renderImageBlock(number: number) {
   return (
     <div className="img-wrapper">
       <img
