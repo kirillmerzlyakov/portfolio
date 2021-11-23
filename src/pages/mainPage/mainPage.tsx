@@ -22,7 +22,7 @@ export const MainPage: React.FunctionComponent = (props) => (
         route="/chicaga"
         sourceLink="https://chicaga.ru"
       />
-      <ContentItem name="asd" imgName="" route="/" sourceLink="" />
+      <ContentItem name="BeatsApp" imgName="" route="/beatsapp" sourceLink="" />
     </div>
   </div>
 );
