@@ -15,14 +15,14 @@ export const MainPage: React.FunctionComponent = (props) => (
         route="/skinscan"
         sourceLink="https://скиньскан.рф"
       />
-      <ContentItem name="BRICS" imgName="" route="/brics" sourceLink="" />
+      <ContentItem name="BRICS" imgName="" route="/brics" />
       <ContentItem
         name="CHICAGA"
         imgName=""
         route="/chicaga"
         sourceLink="https://chicaga.ru"
       />
-      <ContentItem name="BeatsApp" imgName="" route="/beatsapp" sourceLink="" />
+      <ContentItem name="BeatsApp" imgName="" route="/beatsapp" />
     </div>
   </div>
 );
