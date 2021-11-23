@@ -1,4 +1,4 @@
-.content-skinscan {
+.projects-content {
   display: flex;
   position: relative;
   flex-grow: 1;
@@ -24,4 +24,14 @@
   font-weight: 0;
   margin: 0;
   padding: 0;
+}
+
+.text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 70px 40px 0;
+}
+
+.text-block {
+  width: 408px;
 }

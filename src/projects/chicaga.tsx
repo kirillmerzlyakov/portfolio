@@ -1,13 +1,13 @@
 import React from "react";
-import { Menu } from "../../components/menu/menu";
-import "./chicaga.css";
+import { Menu } from "../components/menu/menu";
+import "./projects.css";
 
 const TEXT_BLOCK = [
   "Для входа в свой кошелек необходимо создать и подтвердить мнемони-ческую фразу. Для этого я придумал интерактивный сценарий.",
 ];
 
 export const Chicaga: React.FunctionComponent = (props) => (
-  <div className="content-chicaga">
+  <div className="projects-content">
     <Menu
       name={"CHICAGA"}
       city={"Санкт-Петербург"}

@@ -1,6 +1,6 @@
 import React from "react";
-import { Menu } from "../../components/menu/menu";
-import "./skinscan.css";
+import { Menu } from "../components/menu/menu";
+import "./projects.css";
 
 const VIDEO_SOURCES: { [key: string]: string } = {
   "Act-Contract-0": "https://player.vimeo.com/video/643858135",
@@ -15,7 +15,7 @@ const TEXT_BLOCK = [
 ];
 
 export const SkinScan: React.FunctionComponent = (props) => (
-  <div className="content-skinscan">
+  <div className="projects-content">
     <Menu
       name={"Скиньскан.рф"}
       city={"Екатеринбург"}

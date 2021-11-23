@@ -1,6 +1,6 @@
 import React from "react";
-import { Menu } from "../../components/menu/menu";
-import "./brics.css";
+import { Menu } from "../components/menu/menu";
+import "./projects.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
@@ -9,7 +9,7 @@ const TEXT_BLOCK = [
 ];
 
 export const Brics: React.FunctionComponent = (props) => (
-  <div className="content-skinscan">
+  <div className="projects-content">
     <Menu
       name={"BRICS competition"}
       city={"Екатеринбург"}
