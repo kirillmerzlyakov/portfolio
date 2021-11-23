@@ -96,3 +96,9 @@
 .content-item-link {
   display: block;
 }
+
+.site-link {
+  height: 18px;
+  width: 18px;
+  background: url("./link.svg");
+}

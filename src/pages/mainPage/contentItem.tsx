@@ -16,8 +16,8 @@ export const ContentItem: React.FunctionComponent<Props> = (props) => (
         <div className="content-item-header1">{props.name}</div>
       </Link>
       {props.sourceLink && (
-        <a href={props.sourceLink} target="_blank">
-          сайт
+        <a href={props.sourceLink} target="_blank" rel="noreferrer">
+          <div className="site-link"></div>
         </a>
       )}
     </div>
