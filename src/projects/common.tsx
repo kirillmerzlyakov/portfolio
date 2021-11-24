@@ -5,3 +5,17 @@ export const renderTextBlock = (text: string) => (
 export const renderImageBlock = (folder: string, number: number) => (
   <img className="image" src={`./${folder}/${number}.jpg`} alt="картинка"></img>
 );
+
+export function renderVideoBlock(title: string, src: string) {
+  return (
+    <iframe
+      src={src}
+      frameBorder="0"
+      width="1120"
+      height="630"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowFullScreen
+      title={title}
+    ></iframe>
+  );
+}

@@ -1,7 +1,8 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
-import { renderImageBlock, renderTextBlock } from "./common";
+import { renderImageBlock, renderTextBlock, renderVideoBlock } from "./common";
 import cn from "./projects.module.less";
+import { Slide } from "react-slideshow-image";
 
 const TEXT_BLOCK = [
   "Для входа в свой кошелек необходимо создать и подтвердить мнемони-ческую фразу. Для этого я придумал интерактивный сценарий.",
@@ -23,21 +24,43 @@ export const Fibonacci: React.FunctionComponent = (props) => (
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {[2, 3, 4, 5].map((i) => renderImageBlock(FOLDER_NAME, i))}
+    {renderImageBlock(FOLDER_NAME, 2)}
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {renderImageBlock(FOLDER_NAME, 6)}
+    {[3, 4, 5, 6].map((i) => renderImageBlock(FOLDER_NAME, i))}
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {[7, 8, 9].map((i) => renderImageBlock(FOLDER_NAME, i))}
+    {/* //video */}
+    {renderVideoBlock("Fibonacci", "https://player.vimeo.com/video/649489917")}
+
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {[10, 11, 12].map((i) => renderImageBlock(FOLDER_NAME, i))}
+    {[7, 8, 9, 10].map((i) => renderImageBlock(FOLDER_NAME, i))}
+    <div className={cn["text-wrapper"]}>
+      {renderTextBlock(TEXT_BLOCK[0])}
+      {renderTextBlock(TEXT_BLOCK[0])}
+    </div>
+    {/* slider 11-20 */}
+    {Slideshow()}
   </div>
 );
+
+const Slideshow = () => {
+  return (
+    <div className={cn["slide-container"]}>
+      <Slide>
+        {[11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map((v, index) => (
+          <div className={cn["each-slide"]} key={index}>
+            {renderImageBlock(FOLDER_NAME, v)}
+          </div>
+        ))}
+      </Slide>
+    </div>
+  );
+};

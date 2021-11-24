@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
-import { renderImageBlock, renderTextBlock } from "./common";
+import { renderImageBlock, renderTextBlock, renderVideoBlock } from "./common";
 import cn from "./projects.module.less";
 
 const VIDEO_SOURCES: { [key: string]: string } = {
@@ -62,17 +62,3 @@ export const SkinScan: React.FunctionComponent = (props) => (
     {[11, 12].map((a) => renderImageBlock(FOLDER_NAME, a))}
   </div>
 );
-
-function renderVideoBlock(title: string, src: string) {
-  return (
-    <iframe
-      src={src}
-      frameBorder="0"
-      width="1120"
-      height="630"
-      allow="autoplay; fullscreen; picture-in-picture"
-      allowFullScreen
-      title={title}
-    ></iframe>
-  );
-}
