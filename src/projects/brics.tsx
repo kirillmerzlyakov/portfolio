@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
-import "./projects.css";
+import cn from "./projects.module.less";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
@@ -9,7 +9,7 @@ const TEXT_BLOCK = [
 ];
 
 export const Brics: React.FunctionComponent = (props) => (
-  <div className="projects-content">
+  <div className={cn["projects-content"]}>
     <Menu
       name={"BRICS competition"}
       city={"Екатеринбург"}
@@ -20,17 +20,17 @@ export const Brics: React.FunctionComponent = (props) => (
     />
     {renderImageBlock(1)}
 
-    <div className="text-wrapper">
+    <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
     {renderImageBlock(2)}
-    <div className="text-wrapper">
+    <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
     {[3, 4, 5].map((i) => renderImageBlock(i))}
-    <div className="text-wrapper">
+    <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
@@ -44,7 +44,7 @@ function renderTextBlock(text: string) {
 
 function renderImageBlock(number: number) {
   return (
-    <div className="img-wrapper">
+    <div className={cn["img-wrapper"]}>
       <img className="image" src={`./brics/${number}.jpg`} alt="картинка"></img>
     </div>
   );
@@ -52,10 +52,10 @@ function renderImageBlock(number: number) {
 
 const Slideshow = () => {
   return (
-    <div className="slide-container">
+    <div className={cn["slide-container"]}>
       <Slide>
         {[8, 9, 10, 11, 12, 13, 14, 15, 16].map((v, index) => (
-          <div className="each-slide" key={index}>
+          <div className={cn["each-slide"]} key={index}>
             {renderImageBlock(v)}
           </div>
         ))}

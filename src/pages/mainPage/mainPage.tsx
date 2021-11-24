@@ -1,14 +1,14 @@
 import React from "react";
-import "./mainPage.css";
+import cn from "./mainPage.module.less";
 import { ContentItem } from "./contentItem";
 
 export const MainPage: React.FunctionComponent = (props) => (
-  <div className="main-page">
-    <div className="first-main-page">
+  <div className={cn["main-page"]}>
+    <div className={cn["first-main-page"]}>
       {renderMenuBlock()}
       {renderTitleBlock()}
     </div>
-    <div className="items-wrapper">
+    <div className={cn["items-wrapper"]}>
       <ContentItem
         name="Скиньскан.рф"
         imgName=""
@@ -33,8 +33,8 @@ export const MainPage: React.FunctionComponent = (props) => (
 );
 
 const renderMenuBlock = () => (
-  <div className="menu-main-page">
-    <div className="menu-main-page-text">
+  <div className={cn["menu-main-page"]}>
+    <div className={cn["menu-main-page-text"]}>
       Дарина Лачихина
       <br />
       дизайнер
@@ -43,15 +43,15 @@ const renderMenuBlock = () => (
 );
 
 const renderTitleBlock = () => (
-  <div className="title-main-page">
-    <div className="title-text-wrapper">
-      <span className="text-1">
+  <div className={cn["title-main-page"]}>
+    <div className={cn["title-text-wrapper"]}>
+      <span className={cn["text-1"]}>
         DIGITAL
         <br />
         DESIGNER
       </span>
-      <span className="text-2">/INSIGHT</span>
+      <span className={cn["text-2"]}>/INSIGHT</span>
     </div>
-    <span className="text-3">PORTFOLIO</span>
+    <span className={cn["text-3"]}>PORTFOLIO</span>
   </div>
 );

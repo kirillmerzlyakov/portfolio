@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
-import "./projects.css";
+import cn from "./projects.module.less";
 
 const VIDEO_SOURCES: { [key: string]: string } = {
   "Act-Contract-0": "https://player.vimeo.com/video/643858135",
@@ -15,7 +15,7 @@ const TEXT_BLOCK = [
 ];
 
 export const SkinScan: React.FunctionComponent = (props) => (
-  <div className="projects-content">
+  <div className={cn["projects-content"]}>
     <Menu
       name={"Скиньскан.рф"}
       city={"Екатеринбург"}
@@ -25,7 +25,7 @@ export const SkinScan: React.FunctionComponent = (props) => (
       }
     />
     {renderVideoBlock("Act-Contract-0", VIDEO_SOURCES["Act-Contract-0"])}
-    <div className="text-wrapper">
+    <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
@@ -33,26 +33,26 @@ export const SkinScan: React.FunctionComponent = (props) => (
 
     {[2, 3, 4, 5, 6].map((a) => renderImageBlock(a))}
 
-    <div className="text-wrapper">
+    <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
     {renderVideoBlock("Act-Contract-2", VIDEO_SOURCES["Act-Contract-2"])}
 
-    <div className="text-wrapper">
+    <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
     {[8, 9].map((a) => renderImageBlock(a))}
 
-    <div className="text-wrapper">
+    <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
 
     {renderImageBlock(10)}
 
-    <div className="text-wrapper">
+    <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
@@ -61,14 +61,14 @@ export const SkinScan: React.FunctionComponent = (props) => (
 );
 
 function renderTextBlock(text: string) {
-  return <div className="text-block">{text}</div>;
+  return <div className={cn["text-block"]}>{text}</div>;
 }
 
 function renderImageBlock(number: number) {
   return (
-    <div className="img-wrapper">
+    <div className={cn["img-wrapper"]}>
       <img
-        className="image"
+        className={cn.image}
         src={`./skinscan/${number}.jpg`}
         alt="картинка"
       ></img>
