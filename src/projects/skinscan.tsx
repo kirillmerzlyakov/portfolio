@@ -1,5 +1,6 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
+import { renderImageBlock, renderTextBlock } from "./common";
 import cn from "./projects.module.less";
 
 const VIDEO_SOURCES: { [key: string]: string } = {
@@ -13,6 +14,8 @@ const VIDEO_SOURCES: { [key: string]: string } = {
 const TEXT_BLOCK = [
   "Для входа в свой кошелек необходимо создать и подтвердить мнемони-ческую фразу. Для этого я придумал интерактивный сценарий.",
 ];
+
+const FOLDER_NAME = "skinscan";
 
 export const SkinScan: React.FunctionComponent = (props) => (
   <div className={cn["projects-content"]}>
@@ -31,7 +34,7 @@ export const SkinScan: React.FunctionComponent = (props) => (
     </div>
     {renderVideoBlock("Act-Contract-1", VIDEO_SOURCES["Act-Contract-1"])}
 
-    {[2, 3, 4, 5, 6].map((a) => renderImageBlock(a))}
+    {[2, 3, 4, 5, 6].map((a) => renderImageBlock(FOLDER_NAME, a))}
 
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
@@ -43,38 +46,22 @@ export const SkinScan: React.FunctionComponent = (props) => (
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {[8, 9].map((a) => renderImageBlock(a))}
+    {[8, 9].map((a) => renderImageBlock(FOLDER_NAME, a))}
 
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
 
-    {renderImageBlock(10)}
+    {renderImageBlock(FOLDER_NAME, 10)}
 
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {[11, 12].map((a) => renderImageBlock(a))}
+    {[11, 12].map((a) => renderImageBlock(FOLDER_NAME, a))}
   </div>
 );
-
-function renderTextBlock(text: string) {
-  return <div className={cn["text-block"]}>{text}</div>;
-}
-
-function renderImageBlock(number: number) {
-  return (
-    <div className={cn["img-wrapper"]}>
-      <img
-        className={cn.image}
-        src={`./skinscan/${number}.jpg`}
-        alt="картинка"
-      ></img>
-    </div>
-  );
-}
 
 function renderVideoBlock(title: string, src: string) {
   return (

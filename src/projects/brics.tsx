@@ -9,7 +9,7 @@ const TEXT_BLOCK = [
   "Для входа в свой кошелек необходимо создать и подтвердить мнемони-ческую фразу. Для этого я придумал интерактивный сценарий.",
 ];
 
-const FOLDER = "brics";
+const FOLDER_NAME = "brics";
 
 export const Brics: React.FunctionComponent = (props) => (
   <div className={cn["projects-content"]}>
@@ -21,18 +21,17 @@ export const Brics: React.FunctionComponent = (props) => (
         "блабалбалбалбалбалаблабла блаблб албафыолврф олырвлдфорывлфоыролдфы рвфолыврфолдвр"
       }
     />
-    {renderImageBlock(FOLDER, 1)}
-
+    {renderImageBlock(FOLDER_NAME, 1)}
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {renderImageBlock(FOLDER, 2)}
+    {renderImageBlock(FOLDER_NAME, 2)}
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {[3, 4, 5].map((i) => renderImageBlock(FOLDER, i))}
+    {[3, 4, 5].map((i) => renderImageBlock(FOLDER_NAME, i))}
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
@@ -47,7 +46,7 @@ const Slideshow = () => {
       <Slide>
         {[8, 9, 10, 11, 12, 13, 14, 15, 16].map((v, index) => (
           <div className={cn["each-slide"]} key={index}>
-            {renderImageBlock(FOLDER, v)}
+            {renderImageBlock(FOLDER_NAME, v)}
           </div>
         ))}
       </Slide>
