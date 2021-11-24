@@ -3,12 +3,12 @@ import { Route, Routes } from "react-router-dom";
 import { Footer } from "../footer/footer";
 import { Brics } from "../../projects/brics";
 import { SkinScan } from "../../projects/skinscan";
-import "./content.css";
+import cn from "./content.module.less";
 import { Chicaga } from "../../projects/chicaga";
 import { BeatsApp } from "../../projects/beatsApp";
 
 export const Сontent: React.FunctionComponent = (props) => (
-  <div className="content">
+  <div className={cn["content"]}>
     <Routes>
       <Route path="/skinscan" element={<SkinScan />} />
       <Route path="/brics" element={<Brics />} />

@@ -1,4 +1,4 @@
 import React from "react";
-import "./footer.css";
+import cn from "./footer.module.less";
 
-export const Footer: React.FC = (props) => <div className="footer"></div>;
+export const Footer: React.FC = (props) => <div className={cn["footer"]}></div>;

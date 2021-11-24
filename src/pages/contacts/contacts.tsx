@@ -17,7 +17,7 @@ export const Contacts = () => (
 const renderTitleBlock = () => (
   <div className={cn["contact-title"]}>
     <div className={cn["contact-title-text-wrapper"]}>
-      <span className="contact-text-1">
+      <span className={cn["contact-text-1"]}>
         DO YOU WANT
         <br />
         TO ORDER

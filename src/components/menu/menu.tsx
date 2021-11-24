@@ -1,5 +1,5 @@
 import React from "react";
-import "./menu.css";
+import cn from "./menu.module.less";
 
 interface Props {
   name: string;
@@ -8,11 +8,11 @@ interface Props {
   description: string;
 }
 export const Menu: React.FC<Props> = (props) => (
-  <div className="menu">
-    <div className="description-block">
-      <div className="description-header">{props.name}</div>
+  <div className={cn["menu"]}>
+    <div className={cn["description-block"]}>
+      <div className={cn["description-header"]}>{props.name}</div>
       <div>{`${props.city} | ${props.year}`}</div>
-      <div className="description">
+      <div className={cn["description"]}>
         _<br />
         <br />
         {props.description}
@@ -20,7 +20,7 @@ export const Menu: React.FC<Props> = (props) => (
         _<br />
       </div>
     </div>
-    <div className="author">
+    <div className={cn["author"]}>
       Дарина Лачихина
       <br /> дизайнер
     </div>

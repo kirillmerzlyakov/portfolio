@@ -1,18 +1,18 @@
 import React from "react";
-import "./header.css";
+import cn from "./header.module.less";
 import { Link } from "react-router-dom";
 
 export const Header: React.FC = (props) => (
-  <div className="header">
-    <div className="navigation">{renderBackArrow()}</div>
-    <div className="header-main">Дарина Лачихина</div>
-    <div className="header-buttons">
-      <Link className="header-button" to="/">
+  <div className={cn["header"]}>
+    <div className={cn["navigation"]}>{renderBackArrow()}</div>
+    <div className={cn["header-main"]}>Дарина Лачихина</div>
+    <div className={cn["header-buttons"]}>
+      <Link className={cn["header-button"]} to="/">
         Портфолио
       </Link>
-      <div className="header-button">Обо&nbsp;мне</div>
-      <div className="header-button">
-        <Link className="header-button" to="/contacts">
+      <div className={cn["header-button"]}>Обо&nbsp;мне</div>
+      <div className={cn["header-button"]}>
+        <Link className={cn["header-button"]} to="/contacts">
           Контакты
         </Link>
       </div>
@@ -21,8 +21,8 @@ export const Header: React.FC = (props) => (
 );
 
 const renderBackArrow = () => (
-  <Link className="navigate-link" to="/">
-    <div className="arrowSvg"></div>
+  <Link className={cn["navigate-link"]} to="/">
+    <div className={cn["arrowSvg"]}></div>
     Назад
   </Link>
 );
