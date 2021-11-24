@@ -3,6 +3,7 @@ import { Menu } from "../components/menu/menu";
 import { renderImageBlock, renderTextBlock, renderVideoBlock } from "./common";
 import cn from "./projects.module.less";
 import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 const TEXT_BLOCK = [
   "Для входа в свой кошелек необходимо создать и подтвердить мнемони-ческую фразу. Для этого я придумал интерактивный сценарий.",
@@ -34,7 +35,6 @@ export const Fibonacci: React.FunctionComponent = (props) => (
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {/* //video */}
     {renderVideoBlock("Fibonacci", "https://player.vimeo.com/video/649489917")}
 
     <div className={cn["text-wrapper"]}>
@@ -46,8 +46,7 @@ export const Fibonacci: React.FunctionComponent = (props) => (
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {/* slider 11-20 */}
-    {Slideshow()}
+    <Slideshow />
   </div>
 );
 

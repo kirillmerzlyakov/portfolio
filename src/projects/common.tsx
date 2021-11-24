@@ -1,9 +1,15 @@
+import cn from "./projects.module.less";
+
 export const renderTextBlock = (text: string) => (
   <div className="text-block">{text}</div>
 );
 
 export const renderImageBlock = (folder: string, number: number) => (
-  <img className="image" src={`./${folder}/${number}.jpg`} alt="картинка"></img>
+  <img
+    className={cn["image"]}
+    src={`./${folder}/${number}.jpg`}
+    alt="картинка"
+  ></img>
 );
 
 export function renderVideoBlock(title: string, src: string) {
