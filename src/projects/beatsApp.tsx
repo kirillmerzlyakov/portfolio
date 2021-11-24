@@ -1,10 +1,13 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
+import { renderImageBlock, renderTextBlock } from "./common";
 import cn from "./projects.module.less";
 
 const TEXT_BLOCK = [
   "Для входа в свой кошелек необходимо создать и подтвердить мнемони-ческую фразу. Для этого я придумал интерактивный сценарий.",
 ];
+
+const FOLDER = "beatsApp";
 
 export const BeatsApp: React.FunctionComponent = (props) => (
   <div className={cn["projects-content"]}>
@@ -16,25 +19,11 @@ export const BeatsApp: React.FunctionComponent = (props) => (
         "блабалбалбалбалбалаблабла блаблб албафыолврф олырвлдфорывлфоыролдфы рвфолыврфолдвр"
       }
     />
-    {renderImageBlock(1)}
+    {renderImageBlock(FOLDER, 1)}
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
       {renderTextBlock(TEXT_BLOCK[0])}
     </div>
-    {[2, 3].map((i) => renderImageBlock(i))}
+    {[2, 3].map((i) => renderImageBlock(FOLDER, i))}
   </div>
 );
-
-function renderTextBlock(text: string) {
-  return <div className={cn["text-block"]}>{text}</div>;
-}
-
-function renderImageBlock(number: number) {
-  return (
-    <img
-      className={cn["image"]}
-      src={`./beatsApp/${number}.jpg`}
-      alt="картинка"
-    ></img>
-  );
-}

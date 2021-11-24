@@ -15,15 +15,15 @@ export const Contacts = () => (
 );
 
 const renderTitleBlock = () => (
-  <div className={cn["contact-title"]}>
-    <div className={cn["contact-title-text-wrapper"]}>
-      <span className={cn["contact-text-1"]}>
+  <div className={cn["title"]}>
+    <div className={cn["text-wrapper"]}>
+      <span className={cn["text-1"]}>
         DO YOU WANT
         <br />
         TO ORDER
-        <span className={cn["contact-text-2"]}>
+        <span className={cn["text-2"]}>
           A DESIGN
-          <span className={cn["contact-text-3"]}>?</span>
+          <span className={cn["text-3"]}>?</span>
         </span>
       </span>
     </div>

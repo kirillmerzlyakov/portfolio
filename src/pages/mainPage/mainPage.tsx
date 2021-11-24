@@ -34,8 +34,8 @@ export const MainPage: React.FunctionComponent = (props) => (
 );
 
 const renderMenuBlock = () => (
-  <div className={cn["menu-main-page"]}>
-    <div className={cn["menu-main-page-text"]}>
+  <div className={cn["menu"]}>
+    <div className={cn["menu-text"]}>
       Дарина Лачихина
       <br />
       дизайнер
@@ -44,7 +44,7 @@ const renderMenuBlock = () => (
 );
 
 const renderTitleBlock = () => (
-  <div className={cn["title-main-page"]}>
+  <div className={cn["title"]}>
     <div className={cn["title-text-wrapper"]}>
       <span className={cn["text-1"]}>
         DIGITAL
