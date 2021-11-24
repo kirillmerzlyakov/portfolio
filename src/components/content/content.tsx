@@ -6,6 +6,7 @@ import { SkinScan } from "../../projects/skinscan";
 import cn from "./content.module.less";
 import { Chicaga } from "../../projects/chicaga";
 import { BeatsApp } from "../../projects/beatsApp";
+import { Fibonacci } from "../../projects/fibonacci";
 
 export const Сontent: React.FunctionComponent = (props) => (
   <div className={cn["content"]}>
@@ -14,6 +15,7 @@ export const Сontent: React.FunctionComponent = (props) => (
       <Route path="/brics" element={<Brics />} />
       <Route path="/chicaga" element={<Chicaga />} />
       <Route path="/beatsapp" element={<BeatsApp />} />
+      <Route path="/fibonacci" element={<Fibonacci />} />
     </Routes>
     {/* <Footer /> */}
   </div>
