@@ -1,70 +1,56 @@
 :local {
-  .contacts {
+  .main-page {
     display: flex;
-    flex-direction: row;
     flex-grow: 1;
-    min-width: 1400px;
+    min-width: 400px;
+    flex-direction: column;
     margin-top: 9vh;
     color: #222;
-    padding-right: 20px;
-    height: 91vh;
   }
 
-  .contact-page {
+  .first-block-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu {
     width: 370px;
     min-width: 370px;
-    height: 91vh;
     position: relative;
   }
 
   .avatar {
-    margin-top: 90px;
+    margin-top: 140px;
     margin-left: 20px;
   }
 
-  .page-text {
-    position: absolute;
-    bottom: 60px;
-    left: 20px;
-    color: #bbb;
-  }
-
   .title {
+    height: 91vh;
     display: block;
     overflow: hidden;
     flex-grow: 1;
   }
 
-  .text-wrapper {
-    font-weight: 400;
-    letter-spacing: 0.04em;
-    font-family: Antiqua Roman;
-    display: flex;
-    align-items: flex-end;
-    padding: 50px 0;
+  .wrapper {
+    margin-top: 50px;
   }
 
-  .text-1 {
-    font-size: 150px;
-    line-height: 184px;
-  }
-
-  .text-2 {
-    color: #e85211;
-    font-size: 92px;
-    font-weight: 400;
-    line-height: 124px;
-    margin-left: 30px;
-  }
-
-  .text-3 {
-    font-size: 120px;
+  .contacts {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 0;
+    content: "";
+    font-weight: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .contact-block {
     font-family: Mont;
     font-size: 22px;
     line-height: 28px;
+    margin-top: 50px;
   }
 
   .contact-block1 {

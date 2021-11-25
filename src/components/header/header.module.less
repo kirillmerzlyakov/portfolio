@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 9vh;
     color: #222;
     background-color: #f6f6f6;
@@ -30,10 +30,10 @@
     background: url("./arrow.svg") no-repeat 0px 0px;
   }
 
-  .main {
+  .name {
     display: flex;
     flex-grow: 1;
-    min-width: 400px;
+    min-width: 250px;
     align-items: center;
     text-align: left;
     font-weight: 700;
@@ -49,9 +49,12 @@
     padding-right: 16px;
   }
 
+  .bold {
+    font-weight: 600 !important;
+  }
+
   .button {
     display: flex;
-    /* padding: 10px; */
     text-decoration: none;
     color: #222;
   }

@@ -4,9 +4,9 @@ import { ContentItem } from "./contentItem";
 
 export const MainPage: React.FunctionComponent = (props) => (
   <div className={cn["main-page"]}>
-    <div className={cn["first-main-page"]}>
+    <div className={cn["first-block-wrapper"]}>
       {renderMenuBlock()}
-      {renderTitleBlock()}
+      {renderTitulBlock()}
     </div>
     <div className={cn["items-wrapper"]}>
       <ContentItem
@@ -43,16 +43,12 @@ const renderMenuBlock = () => (
   </div>
 );
 
-const renderTitleBlock = () => (
+const renderTitulBlock = () => (
   <div className={cn["title"]}>
-    <div className={cn["title-text-wrapper"]}>
-      <span className={cn["text-1"]}>
-        DIGITAL
-        <br />
-        DESIGNER
-      </span>
-      <span className={cn["text-2"]}>/INSIGHT</span>
-    </div>
-    <span className={cn["text-3"]}>PORTFOLIO</span>
+    <img
+      className={cn["titul"]}
+      src={`./common/titul.jpg`}
+      alt="картинка"
+    ></img>
   </div>
 );
