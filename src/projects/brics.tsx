@@ -6,7 +6,11 @@ import "react-slideshow-image/dist/styles.css";
 import { renderImageBlock, renderTextBlock } from "./common";
 
 const TEXT_BLOCK = [
-  "Для входа в свой кошелек необходимо создать и подтвердить мнемони-ческую фразу. Для этого я придумал интерактивный сценарий.",
+  "Мне посчастливилось поработать с Международным центром конкурентного права и политики БРИКС в Высшей школе экономики. Сделала дизайн сайта, который ежедневно пополняется новым контентом уже на протяжении года.",
+  "Сайт состоит из 30 веб-страниц. Для каждой отрисованы адптив и по несколько задизайненных экранов для всех состояний интерактивных блоков.",
+  "Главная страница включает в себя бесконечную ленту с блоками  новостей, видео, статей и анонсов событий.",
+  "При переходе в любой из блоков открывается соответствующая страница с контентом и подборкой похожих материалов.",
+  "Фирменный стиль для проекта был тоже разработан мною. Логотипом занимался мой коллега дизайнер Андрей Черный. Ниже вы можете полистать брендбук BRICS.",
 ];
 
 const FOLDER_NAME = "brics";
@@ -24,18 +28,15 @@ export const Brics: React.FunctionComponent = (props) => (
     {renderImageBlock(FOLDER_NAME, 1)}
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
-      {renderTextBlock(TEXT_BLOCK[0])}
+      {renderTextBlock(TEXT_BLOCK[1])}
     </div>
     {renderImageBlock(FOLDER_NAME, 2)}
     <div className={cn["text-wrapper"]}>
-      {renderTextBlock(TEXT_BLOCK[0])}
-      {renderTextBlock(TEXT_BLOCK[0])}
+      {renderTextBlock(TEXT_BLOCK[2])}
+      {renderTextBlock(TEXT_BLOCK[3])}
     </div>
     {[3, 4, 5].map((i) => renderImageBlock(FOLDER_NAME, i))}
-    <div className={cn["text-wrapper"]}>
-      {renderTextBlock(TEXT_BLOCK[0])}
-      {renderTextBlock(TEXT_BLOCK[0])}
-    </div>
+    <div className={cn["text-wrapper"]}>{renderTextBlock(TEXT_BLOCK[4])}</div>
     <Slideshow />
   </div>
 );
