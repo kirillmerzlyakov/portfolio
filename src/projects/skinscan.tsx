@@ -34,7 +34,7 @@ export const SkinScan: React.FunctionComponent = (props) => (
     </div>
     {renderVideoBlock("Act-Contract-1", VIDEO_SOURCES["Act-Contract-1"])}
 
-    {[2, 3, 4, 5, 6].map((a) => renderImageBlock(FOLDER_NAME, a))}
+    {[2, 3, 4, 5, 6, 7].map((a) => renderImageBlock(FOLDER_NAME, a))}
 
     <div className={cn["text-wrapper"]}>
       {renderTextBlock(TEXT_BLOCK[0])}
