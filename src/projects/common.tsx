@@ -1,7 +1,7 @@
 import cn from "./projects.module.less";
 
 export const renderTextBlock = (text: string) => (
-  <div className="text-block">{text}</div>
+  <div className={cn["text-block"]}>{text}</div>
 );
 
 export const renderImageBlock = (folder: string, number: number) => (
