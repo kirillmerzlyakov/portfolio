@@ -10,7 +10,6 @@ const TEXT_BLOCK = [
   "Сайт состоит из 30 веб-страниц. Для каждой отрисованы адптив и по несколько задизайненных экранов для всех состояний интерактивных блоков.",
   "Главная страница включает в себя бесконечную ленту с блоками  новостей, видео, статей и анонсов событий.",
   "При переходе в любой из блоков открывается соответствующая страница с контентом и подборкой похожих материалов.",
-  "Фирменный стиль для проекта был тоже разработан мною. Логотипом занимался мой коллега дизайнер Андрей Черный. Ниже вы можете полистать брендбук BRICS.",
 ];
 
 const FOLDER_NAME = "brics";
@@ -36,7 +35,20 @@ export const Brics: React.FunctionComponent = (props) => (
       {renderTextBlock(TEXT_BLOCK[3])}
     </div>
     {[3, 4, 5].map((i) => renderImageBlock(FOLDER_NAME, i))}
-    <div className={cn["text-wrapper"]}>{renderTextBlock(TEXT_BLOCK[4])}</div>
+    <div className={cn["text-wrapper"]}>
+      <div className="text-block">
+        Фирменный стиль для проекта был тоже разработан мною. Логотипом
+        занимался мой коллега дизайнер{" "}
+        <a
+          href="https://www.facebook.com/adverfreak?hc_ref=ARTYTB6yPr1P02-JL9Z4FhrqVsNU8dZQ215nKZtkSiAZmqps3Wb7Eb3P3X5AKskiOuY&fref=nf"
+          target="_blank"
+        >
+          Андрей Черный
+        </a>
+        . Ниже вы можете полистать брендбук BRICS.
+      </div>
+    </div>
+
     <Slideshow />
   </div>
 );
