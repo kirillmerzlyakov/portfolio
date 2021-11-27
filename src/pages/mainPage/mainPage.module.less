@@ -65,12 +65,17 @@
   }
 
   .content-item {
-    width: 48%;
+    width: 47%;
     padding: 10px;
     min-width: 500px;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    transition-duration: 0.2s;
+  }
+
+  .content-item:hover {
+    transform: scale(1.01);
   }
 
   .header {
@@ -84,7 +89,13 @@
     display: block;
   }
 
-  .img {
+  .image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .img-template {
     width: 100%;
     height: 440px;
     background-color: gray;

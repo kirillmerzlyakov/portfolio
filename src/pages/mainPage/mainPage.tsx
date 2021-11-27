@@ -11,13 +11,13 @@ export const MainPage: React.FunctionComponent = (props) => (
     <div className={cn["items-wrapper"]}>
       <ContentItem
         name="Скиньскан.рф"
-        imgName=""
+        imgName="skinscan"
         route="/skinscan"
         sourceLink="https://скиньскан.рф"
       />
       <ContentItem
         name="BRICS"
-        imgName=""
+        imgName="brics"
         route="/brics"
         sourceLink="https://bricscompetition.org/"
       />

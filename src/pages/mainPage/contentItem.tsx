@@ -11,18 +11,26 @@ interface Props {
 
 export const ContentItem: React.FunctionComponent<Props> = (props) => (
   <div className={cn["content-item"]}>
-    <div className={cn["header"]}>
+    <span className={cn["header"]}>
       <Link className={cn["link"]} to={props.route}>
-        <div className={cn["header1"]}>{props.name}</div>
+        <span className={cn["header1"]}>{props.name}</span>
       </Link>
       {props.sourceLink && (
         <a href={props.sourceLink} target="_blank" rel="noreferrer">
           <div className={cn["site-link"]}></div>
         </a>
       )}
-    </div>
+    </span>
     <Link to={props.route}>
-      <div className={cn["img"]}>{/* <img ></img> */}</div>
+      {props.imgName ? (
+        <img
+          className={cn["image"]}
+          src={`./tiles/${props.imgName}.jpg`}
+          alt="картинка"
+        ></img>
+      ) : (
+        <div className={cn["img-template"]}></div>
+      )}
     </Link>
   </div>
 );
