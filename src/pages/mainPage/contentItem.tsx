@@ -21,11 +21,6 @@ export const ContentItem: React.FunctionComponent<Props> = (props) => {
         <Link className={cn["link"]} to={props.route}>
           <span className={cn["header1"]}>{props.name}</span>
         </Link>
-        {props.sourceLink && (
-          <a href={props.sourceLink} target="_blank" rel="noreferrer">
-            <div className={cn["site-link"]}></div>
-          </a>
-        )}
       </span>
       <Link to={props.route}>
         {props.imgName ? (
