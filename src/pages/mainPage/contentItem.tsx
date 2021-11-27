@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import cn from "./mainPage.module.less";
 
@@ -9,28 +9,37 @@ interface Props {
   sourceLink?: string;
 }
 
-export const ContentItem: React.FunctionComponent<Props> = (props) => (
-  <div className={cn["content-item"]}>
-    <span className={cn["header"]}>
-      <Link className={cn["link"]} to={props.route}>
-        <span className={cn["header1"]}>{props.name}</span>
+export const ContentItem: React.FunctionComponent<Props> = (props) => {
+  const [isHovering, setIsHovering] = useState(false);
+  return (
+    <div
+      className={cn["content-item"]}
+      onMouseOver={() => setIsHovering(true)}
+      onMouseOut={() => setIsHovering(false)}
+    >
+      <span className={cn["header"]}>
+        <Link className={cn["link"]} to={props.route}>
+          <span className={cn["header1"]}>{props.name}</span>
+        </Link>
+        {props.sourceLink && (
+          <a href={props.sourceLink} target="_blank" rel="noreferrer">
+            <div className={cn["site-link"]}></div>
+          </a>
+        )}
+      </span>
+      <Link to={props.route}>
+        {props.imgName ? (
+          <div className={cn["image1"]}>
+            <img
+              className={cn["image"]}
+              src={`./tiles/${props.imgName}.${isHovering ? "gif" : "jpg"}`}
+              alt="картинка"
+            ></img>
+          </div>
+        ) : (
+          <div className={cn["img-template"]}></div>
+        )}
       </Link>
-      {props.sourceLink && (
-        <a href={props.sourceLink} target="_blank" rel="noreferrer">
-          <div className={cn["site-link"]}></div>
-        </a>
-      )}
-    </span>
-    <Link to={props.route}>
-      {props.imgName ? (
-        <img
-          className={cn["image"]}
-          src={`./tiles/${props.imgName}.jpg`}
-          alt="картинка"
-        ></img>
-      ) : (
-        <div className={cn["img-template"]}></div>
-      )}
-    </Link>
-  </div>
-);
+    </div>
+  );
+};
