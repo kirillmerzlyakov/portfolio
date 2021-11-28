@@ -71,7 +71,7 @@
     margin-bottom: 70px;
     transition-duration: 0.2s;
   }
-  
+
   .content-item:hover {
     transform: scale(1.01);
   }
@@ -119,5 +119,21 @@
     height: 18px;
     width: 18px;
     background: url("./link.svg");
+  }
+
+  @media screen and (max-width: 430px) {
+    .menu {
+      display: none;
+    }
+
+    .content-item {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 0px;
+    }
+
+    .content-item:hover {
+      transform: none;
+    }
   }
 }
