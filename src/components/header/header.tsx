@@ -15,9 +15,6 @@ export const Header: React.FC = (props) => {
         <Link className={styles["button"]} to="/">
           Портфолио
         </Link>
-        <div className={cn([styles["button"], styles["bold"]])}>
-          <span className={styles["bold"]}>Обо&nbsp;мне</span>
-        </div>
         <div className={styles["button"]}>
           <Link className={styles["button"]} to="/contacts">
             Контакты
