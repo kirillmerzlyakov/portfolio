@@ -24,7 +24,6 @@ const TEXT_BLOCK = [
 const FOLDER_NAME = "skinscan";
 
 export const SkinScan: React.FunctionComponent = (props) => {
-  asd();
   return (
     <div className={cn["projects-content"]}>
       <Menu
@@ -56,8 +55,3 @@ export const SkinScan: React.FunctionComponent = (props) => {
     </div>
   );
 };
-
-function asd() {
-  const element = document.querySelector(".image");
-  console.log(element);
-}
