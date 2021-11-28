@@ -27,7 +27,7 @@ export const ContentItem: React.FunctionComponent<Props> = (props) => {
           <div className={cn["image1"]}>
             <img
               className={cn["image"]}
-              src={`./tiles/${props.imgName}.${isHovering ? "gif" : "jpg"}`}
+              src={`./tiles/${props.imgName}.${false ? "gif" : "jpg"}`}
               alt="картинка"
             ></img>
           </div>
