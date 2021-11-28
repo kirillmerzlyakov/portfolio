@@ -31,7 +31,9 @@ const renderTitulBlock = () => (
       <div className={cn["contact-block"]}>
         <div className={cn["contact-block1"]}>Напишите мне:</div>
         <div className={cn["contact-block2"]}>e. lachikhina2017@yandex.ru</div>
-        <span>t. +7 932 123 9426</span>
+        <a className={cn["phone"]} href="tel:79321239426">
+          t. +7 932 123 9426
+        </a>
       </div>
     </div>
   </div>
