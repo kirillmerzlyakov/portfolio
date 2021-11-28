@@ -23,35 +23,41 @@ const TEXT_BLOCK = [
 
 const FOLDER_NAME = "skinscan";
 
-export const SkinScan: React.FunctionComponent = (props) => (
-  <div className={cn["projects-content"]}>
-    <Menu
-      name={"Скиньскан.рф"}
-      city={"Екатеринбург"}
-      year={"2021"}
-      description={
-        "блабалбалбалбалбалаблабла блаблб албафыолврф олырвлдфорывлфоыролдфы рвфолыврфолдвр"
-      }
-    />
-    {renderVideoBlock("Act-Contract-0", VIDEO_SOURCES["Act-Contract-0"])}
-    <div className={cn["text-wrapper"]}>
-      {renderTextBlock(TEXT_BLOCK[0])}
-      {renderTextBlock(TEXT_BLOCK[1])}
+export const SkinScan: React.FunctionComponent = (props) => {
+  asd();
+  return (
+    <div className={cn["projects-content"]}>
+      <Menu
+        name={"Скиньскан.рф"}
+        city={"Екатеринбург"}
+        year={"2021"}
+        description={
+          "блабалбалбалбалбалаблабла блаблб албафыолврф олырвлдфорывлфоыролдфы рвфолыврфолдвр"
+        }
+      />
+      {renderVideoBlock("Act-Contract-0", VIDEO_SOURCES["Act-Contract-0"])}
+      <div className={cn["text-wrapper"]}>
+        {renderTextBlock(TEXT_BLOCK[0])}
+        {renderTextBlock(TEXT_BLOCK[1])}
+      </div>
+      {[11, 12].map((a) => renderImageBlock(FOLDER_NAME, a))}
+      <div className={cn["text-wrapper"]}>
+        {renderTextBlock(TEXT_BLOCK[2])}
+        {renderTextBlock(TEXT_BLOCK[3])}
+      </div>
+      {[8, 9].map((a) => renderImageBlock(FOLDER_NAME, a))}
+      <div className={cn["text-wrapper"]}>{renderTextBlock(TEXT_BLOCK[4])}</div>
+      {renderImageBlock(FOLDER_NAME, 10)}
+      <div className={cn["text-wrapper"]}>{renderTextBlock(TEXT_BLOCK[5])}</div>
+      {[2, 3, 4, 5, 6, 7].map((a) => renderImageBlock(FOLDER_NAME, a))}
+      <div className={cn["text-wrapper"]}>{renderTextBlock(TEXT_BLOCK[6])}</div>
+      {renderVideoBlock("Act-Contract-1", VIDEO_SOURCES["Act-Contract-1"])}
+      {renderVideoBlock("Act-Contract-2", VIDEO_SOURCES["Act-Contract-2"])}
     </div>
-    {[11, 12].map((a) => renderImageBlock(FOLDER_NAME, a))}
-    <div className={cn["text-wrapper"]}>
-      {renderTextBlock(TEXT_BLOCK[2])}
-      {renderTextBlock(TEXT_BLOCK[3])}
-    </div>
-    {[8, 9].map((a) => renderImageBlock(FOLDER_NAME, a))}
-    <div className={cn["text-wrapper"]}>{renderTextBlock(TEXT_BLOCK[4])}</div>
-    {renderImageBlock(FOLDER_NAME, 10)}
-    <div className={cn["text-wrapper"]}>{renderTextBlock(TEXT_BLOCK[5])}</div>
-    {[2, 3, 4, 5, 6, 7].map((a) => renderImageBlock(FOLDER_NAME, a))}
-    <div className={cn["text-wrapper"]}>
-      {renderTextBlock(TEXT_BLOCK[6])}
-    </div>
-    {renderVideoBlock("Act-Contract-1", VIDEO_SOURCES["Act-Contract-1"])}
-    {renderVideoBlock("Act-Contract-2", VIDEO_SOURCES["Act-Contract-2"])}
-  </div>
-);
+  );
+};
+
+function asd() {
+  const element = document.querySelector(".image");
+  console.log(element);
+}
