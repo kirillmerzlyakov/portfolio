@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Footer } from "../footer/footer";
 import { Brics } from "../../projects/brics";
 import { SkinScan } from "../../projects/skinscan";
 import cn from "./content.module.less";
@@ -17,6 +16,5 @@ export const Сontent: React.FunctionComponent = (props) => (
       <Route path="/beatsapp" element={<BeatsApp />} />
       <Route path="/fibonacci" element={<Fibonacci />} />
     </Routes>
-    {/* <Footer /> */}
   </div>
 );
