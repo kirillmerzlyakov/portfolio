@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router";
 import { MainPage } from "./pages/mainPage/mainPage";
 import { Contacts } from "./pages/contacts/contacts";
 import cn from "./App.module.less";
+import { Footer } from "./components/footer/footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
       <Сontent />
+      <Footer />
     </div>
   );
 }
