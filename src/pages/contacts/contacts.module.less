@@ -1,3 +1,5 @@
+@import "../../components/shared.module.less";
+
 :local {
   .main-page {
     display: flex;
@@ -19,6 +21,7 @@
   .avatar {
     margin-top: 140px;
     margin-left: 20px;
+    width: 100%;
   }
 
   .title {
@@ -56,5 +59,20 @@
 
   .contact-block2 {
     margin-bottom: 10px;
+  }
+
+  .phone {
+    color: @text-color-black;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 430px) {
+    .menu {
+      display: none;
+    }
+
+    .title {
+      padding: 0 15px;
+    }
   }
 }
