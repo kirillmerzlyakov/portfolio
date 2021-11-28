@@ -27,8 +27,8 @@ export const MainPage: React.FunctionComponent = (props) => (
         route="/chicaga"
         sourceLink="https://chicaga.ru"
       />
-      <ContentItem name="BeatsApp" imgName="" route="/beatsapp" />
-      <ContentItem name="Fibonacci" imgName="" route="/fibonacci" />
+      <ContentItem name="BeatsApp" imgName="beatsApp" route="/beatsapp" />
+      <ContentItem name="Fibonacci" imgName="fibonacci" route="/fibonacci" />
     </div>
   </div>
 );
