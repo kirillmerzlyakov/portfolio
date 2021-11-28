@@ -42,6 +42,7 @@ export const Brics: React.FunctionComponent = (props) => (
         <a
           href="https://www.facebook.com/adverfreak?hc_ref=ARTYTB6yPr1P02-JL9Z4FhrqVsNU8dZQ215nKZtkSiAZmqps3Wb7Eb3P3X5AKskiOuY&fref=nf"
           target="_blank"
+          rel="noreferrer"
         >
           Андрей Черный
         </a>

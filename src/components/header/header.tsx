@@ -31,6 +31,6 @@ export const Header: React.FC = (props) => {
 const renderBackArrow = () => (
   <Link className={styles["navigate-link"]} to="/">
     <div className={styles["arrowSvg"]}></div>
-    Назад
+    <span className={styles["back-text"]}>Назад</span>
   </Link>
 );

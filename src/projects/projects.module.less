@@ -3,7 +3,6 @@
     display: flex;
     position: relative;
     flex-grow: 1;
-    min-width: 400px;
     flex-direction: column;
     margin: 9vh 0 0 370px;
   }
@@ -27,7 +26,8 @@
     display: flex;
     position: relative;
     justify-content: start;
-    padding: 80px 70px 40px 0;
+    overflow: hidden;
+    padding: 80px 70px 40px 20px;
   }
 
   .text-block {
@@ -35,5 +35,21 @@
     width: 40%;
     flex-direction: column;
     margin-right: 250px;
+  }
+
+  @media screen and (max-width: 430px) {
+    .projects-content {
+      margin-left: 0px;
+    }
+
+    .text-wrapper {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .text-block {
+      margin-right: 0px;
+      margin-bottom: 50px;
+    }
   }
 }

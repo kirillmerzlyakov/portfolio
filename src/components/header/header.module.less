@@ -20,7 +20,6 @@
     display: flex;
     align-items: center;
     width: 350px;
-    min-width: 350px;
   }
 
   .navigation .arrowSvg {
@@ -64,5 +63,20 @@
     text-decoration: none;
     color: #222;
     align-items: center;
+  }
+
+  @media screen and (max-width: 430px) {
+    .back-text,
+    .name {
+      display: none;
+    }
+
+    .navigation {
+      width: 100px;
+    }
+
+    .buttons {
+      flex-direction: column;
+    }
   }
 }
