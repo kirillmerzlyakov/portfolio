@@ -14,8 +14,12 @@
   }
 
   .menu {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
     width: 370px;
-    position: relative;
+    min-width: 370px;
+    padding: 20px 40px 20px 20px;
   }
 
   .avatar {
@@ -25,7 +29,6 @@
   }
 
   .title {
-    height: 91vh;
     display: block;
     overflow: hidden;
     flex-grow: 1;
