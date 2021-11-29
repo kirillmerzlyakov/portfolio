@@ -9,7 +9,7 @@ export const renderImageBlock = (folder: string, number: number) => (
     className={cn["image"]}
     src={`./${folder}/${number}.jpg`}
     alt="картинка"
-  ></img>
+  />
 );
 
 export function renderVideoBlock(title: string, src: string) {
