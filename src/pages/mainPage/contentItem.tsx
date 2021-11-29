@@ -23,17 +23,11 @@ export const ContentItem: React.FunctionComponent<Props> = (props) => {
         </Link>
       </span>
       <Link to={props.route}>
-        {props.imgName ? (
-          <div className={cn["image1"]}>
-            <img
-              className={cn["image"]}
-              src={`./tiles/${props.imgName}.${isHovering ? "gif" : "jpg"}`}
-              alt="картинка"
-            ></img>
-          </div>
-        ) : (
-          <div className={cn["img-template"]}></div>
-        )}
+        <img
+          className={cn["item-image"]}
+          src={`./tiles/${props.imgName}.${isHovering ? "gif" : "jpg"}`}
+          alt="картинка"
+        ></img>
       </Link>
     </div>
   );
