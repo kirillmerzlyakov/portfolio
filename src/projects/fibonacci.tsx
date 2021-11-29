@@ -28,6 +28,7 @@ export const Fibonacci: React.FunctionComponent = (props) => (
       description={
         "Компания FIBONACCI GROUP с 2011 года занимается строительством жилых и общественных зданий по индивидуальному проекту. Портфолио насчитывает более 100 000 кв. м объектов недвижимости бизнес- и премиум-класса."
       }
+      sourceLink={"http://a.elpycode.ru"}
     />
     {renderImageBlock(FOLDER_NAME, 1)}
     <div className={cn["text-wrapper"]}>
