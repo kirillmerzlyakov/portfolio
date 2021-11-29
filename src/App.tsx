@@ -5,8 +5,10 @@ import { MainPage } from "./pages/mainPage/mainPage";
 import { Contacts } from "./pages/contacts/contacts";
 import cn from "./App.module.less";
 import { Footer } from "./components/footer/footer";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const { pathname } = useLocation();
   return (
     <div className={cn["app"]}>
       <Header />
@@ -15,7 +17,7 @@ function App() {
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
       <Сontent />
-      <Footer />
+      {pathname !== "/" && <Footer />}
     </div>
   );
 }
