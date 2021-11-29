@@ -46,7 +46,7 @@ const renderMenuBlock = () => (
 const renderTitulBlock = () => (
   <div className={cn["title"]}>
     <img
-      className={cn["titul"]}
+      className={cn["image"]}
       src={`./common/titul.jpg`}
       alt="картинка"
     ></img>
