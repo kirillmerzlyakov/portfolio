@@ -12,11 +12,20 @@ export const Header: React.FC = (props) => {
       </div>
       <div className={styles["name"]}>Дарина Лачихина</div>
       <div className={styles["buttons"]}>
-        <Link className={styles["button"]} to="/">
+        <Link
+          className={cn(styles["button"], pathname === "/" && styles["bold"])}
+          to="/"
+        >
           Портфолио
         </Link>
         <div className={styles["button"]}>
-          <Link className={styles["button"]} to="/contacts">
+          <Link
+            className={cn(
+              styles["button"],
+              pathname === "/contacts" && styles["bold"]
+            )}
+            to="/contacts"
+          >
             Контакты
           </Link>
         </div>
