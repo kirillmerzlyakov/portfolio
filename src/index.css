@@ -18,3 +18,10 @@ code {
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "Mont Semi Bold";
+  src: url("./fonts/Mont/Mont-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}

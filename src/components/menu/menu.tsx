@@ -12,7 +12,9 @@ export const Menu: React.FC<Props> = (props) => (
   <div className={cn["menu"]}>
     <div className={cn["description-block"]}>
       <div className={cn["description-header"]}>{props.name}</div>
-      <div>{`${props.city} | ${props.year}`}</div>
+      <div
+        className={cn["description-city"]}
+      >{`${props.city} | ${props.year}`}</div>
       <div className={cn["description"]}>
         _<br />
         <br />
