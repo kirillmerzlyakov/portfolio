@@ -33,6 +33,7 @@ export const SkinScan: React.FunctionComponent = (props) => {
         description={
           "Онлайн-редактор Скиньскан позволяет подписывать документы в форматах doc, pdf, jpg, png в один клик. Просто загрузите документ и скан или фото подписи и печати. Загрузи документ. PDF, Word, Excel, скан или даже фото! Удали лишние и добавь нужные страницы. Добавь подпись и печать."
         }
+        sourceLink={"https://скиньскан.рф"}
       />
       {renderVideoBlock("Act-Contract-0", VIDEO_SOURCES["Act-Contract-0"])}
       <div className={cn["text-wrapper"]}>

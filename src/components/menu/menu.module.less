@@ -1,3 +1,5 @@
+@import "../../components/shared.module.less";
+
 :local {
   .menu {
     position: fixed;
@@ -9,6 +11,11 @@
     height: 100vh;
     padding: 20px 40px 20px 20px;
     z-index: 10;
+  }
+
+  .source-link {
+    color: @text-color-black;
+    text-decoration: underline;
   }
 
   @media screen and (max-width: 430px) {

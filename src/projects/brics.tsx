@@ -23,6 +23,7 @@ export const Brics: React.FunctionComponent = (props) => (
       description={
         "Сайт международного центра конкурентного права и политики БРИКС в Высшей школе экономики. Проект выполнен в виде постоянно обновляющегося журнала, в который авторы подгружают материалы англоязычных докладов, новости, видео и документацию"
       }
+      sourceLink="https://bricscompetition.org/"
     />
     {renderImageBlock(FOLDER_NAME, 1)}
     <div className={cn["text-wrapper"]}>

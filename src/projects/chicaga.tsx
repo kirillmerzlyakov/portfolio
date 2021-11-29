@@ -22,6 +22,7 @@ export const Chicaga: React.FunctionComponent = (props) => (
       description={
         "Современная онлайн-платформа с большим выбором обучающих программ для изучения английского языка по Skype, Zoom и Webinar, а также в офлайн-школах Санкт-Петербурга."
       }
+      sourceLink="https://chicaga.ru"
     />
     {renderImageBlock(FOLDER_NAME, 1)}
     <div className={cn["text-wrapper"]}>

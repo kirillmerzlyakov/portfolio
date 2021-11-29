@@ -6,6 +6,7 @@ interface Props {
   city: string;
   year: string;
   description: string;
+  sourceLink?: string;
 }
 export const Menu: React.FC<Props> = (props) => (
   <div className={cn["menu"]}>
@@ -19,6 +20,18 @@ export const Menu: React.FC<Props> = (props) => (
         <br />
         _<br />
       </div>
+      <br />
+
+      {props.sourceLink && (
+        <a
+          className={cn["source-link"]}
+          href={props.sourceLink}
+          target="_blank"
+          rel="noreferrer"
+        >
+          ссылка на сайт
+        </a>
+      )}
     </div>
     <div className={cn["author"]}>
       Дарина Лачихина

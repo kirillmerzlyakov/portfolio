@@ -9,24 +9,9 @@ export const MainPage: React.FunctionComponent = (props) => (
       {renderTitulBlock()}
     </div>
     <div className={cn["items-wrapper"]}>
-      <ContentItem
-        name="Скиньскан.рф"
-        imgName="skinscan"
-        route="/skinscan"
-        sourceLink="https://скиньскан.рф"
-      />
-      <ContentItem
-        name="BRICS"
-        imgName="brics"
-        route="/brics"
-        sourceLink="https://bricscompetition.org/"
-      />
-      <ContentItem
-        name="CHICAGA"
-        imgName="chicaga"
-        route="/chicaga"
-        sourceLink="https://chicaga.ru"
-      />
+      <ContentItem name="Скиньскан.рф" imgName="skinscan" route="/skinscan" />
+      <ContentItem name="BRICS" imgName="brics" route="/brics" />
+      <ContentItem name="CHICAGA" imgName="chicaga" route="/chicaga" />
       <ContentItem name="BeatsApp" imgName="beatsApp" route="/beatsapp" />
       <ContentItem name="Fibonacci" imgName="fibonacci" route="/fibonacci" />
     </div>

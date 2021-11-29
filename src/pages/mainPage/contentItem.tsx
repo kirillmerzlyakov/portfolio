@@ -6,7 +6,6 @@ interface Props {
   name: string;
   route: string;
   imgName: string;
-  sourceLink?: string;
 }
 
 export const ContentItem: React.FunctionComponent<Props> = (props) => {
