@@ -8,7 +8,7 @@ export const renderImageBlock = (folder: string, number: number) => (
   <img
     className={cn["image"]}
     src={`./${folder}/${number}.jpg`}
-    alt="картинка"
+    alt="здесь должна быть пикча крутого интерфейса"
   />
 );
 
