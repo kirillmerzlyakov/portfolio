@@ -20,17 +20,17 @@ export const Menu: React.FC<Props> = (props) => (
         <br />
         _<br />
       </div>
-      <br />
-
       {props.sourceLink && (
-        <a
-          className={cn["source-link"]}
-          href={props.sourceLink}
-          target="_blank"
-          rel="noreferrer"
-        >
-          ссылка на сайт
-        </a>
+        <div className={cn["source-link-wrapper"]}>
+          <a
+            className={cn["source-link"]}
+            href={props.sourceLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            ссылка на сайт
+          </a>
+        </div>
       )}
     </div>
     <div className={cn["author"]}>
