@@ -44,8 +44,8 @@ export const Brics: React.FunctionComponent = () => (
     {[3, 4, 5].map((i) => renderImageBlock(FOLDER_NAME, i))}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block"]}>
-        Фирменный стиль для проекта был тоже разработан мною. Логотипом
-        занимался мой коллега дизайнер{" "}
+        Фирменный стиль для проекта был тоже разработан мною.
+        Логотипом&nbsp;занимался мой коллега дизайнер{" "}
         <a
           href="https://www.facebook.com/adverfreak?hc_ref=ARTYTB6yPr1P02-JL9Z4FhrqVsNU8dZQ215nKZtkSiAZmqps3Wb7Eb3P3X5AKskiOuY&fref=nf"
           target="_blank"
