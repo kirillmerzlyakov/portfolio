@@ -1,13 +1,7 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
-import { renderImageBlock, renderTextBlock } from "./common";
+import { renderImageBlock } from "./common";
 import cn from "./projects.module.less";
-
-const TEXT_BLOCK = [
-  "BeatsApp – мобильное приложене для прослушивания музыки, которое я разрабатывала для стартапа из Израиля.",
-  "Ниже представлены несколько экранов, которые раскрывают суть проекта. Приложение еще находится в разработке.",
-
-];
 
 const FOLDER_NAME = "beatsApp";
 
@@ -23,8 +17,14 @@ export const BeatsApp: React.FunctionComponent = (props) => (
     />
     {renderImageBlock(FOLDER_NAME, 1)}
     <div className={cn["text-wrapper"]}>
-      {renderTextBlock(TEXT_BLOCK[0])}
-      {renderTextBlock(TEXT_BLOCK[1])}
+      <div className={cn["text-block"]}>
+        BeatsApp&nbsp;&mdash; мобильное приложене для прослушивания музыки,
+        которое я&nbsp;разрабатывала для стартапа из&nbsp;Израиля.
+      </div>
+      <div className={cn["text-block"]}>
+        Ниже представлены несколько экранов, которые раскрывают суть проекта.
+        Приложение еще находится в&nbsp;разработке.
+      </div>
     </div>
     {[2, 3].map((i) => renderImageBlock(FOLDER_NAME, i))}
   </div>
