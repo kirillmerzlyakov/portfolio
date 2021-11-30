@@ -19,10 +19,8 @@ export const BeatsApp: React.FunctionComponent = (props) => (
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block"]}>
         BeatsApp&nbsp;&mdash; мобильное приложене для прослушивания музыки,
-        которое я&nbsp;разрабатывала для стартапа из&nbsp;Израиля.
-      </div>
-      <div className={cn["text-block"]}>
-        Ниже представлены несколько экранов, которые раскрывают суть проекта.
+        которое я&nbsp;разрабатывала для стартапа из&nbsp;Израиля. Ниже
+        представлены несколько экранов, которые раскрывают суть проекта.
         Приложение еще находится в&nbsp;разработке.
       </div>
     </div>
