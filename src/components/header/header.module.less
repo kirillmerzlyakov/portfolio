@@ -6,7 +6,7 @@
     display: flex;
     position: fixed;
     box-sizing: border-box;
-    padding: 15px 15px 0 15px;
+    padding: 15px 15px 0 0;
     top: 0;
     left: 0;
     width: 100vw;
@@ -22,7 +22,9 @@
   .navigation {
     display: flex;
     align-items: center;
-    width: 350px;
+    box-sizing: border-box;
+    width: @menu-width;
+    padding: 0 15px;
   }
 
   .navigation .arrowSvg {
@@ -72,7 +74,7 @@
 
   @media screen and (max-width: 430px) {
     .header {
-      position: relative;
+      position: none;
     }
 
     .navigation {
@@ -81,14 +83,12 @@
 
     .name {
       align-items: flex-start;
+      padding-left: 15px;
     }
 
     .buttons {
       flex-direction: column;
       align-items: flex-end;
-    }
-
-    .button {
     }
   }
 }
