@@ -34,13 +34,11 @@ export const Brics: React.FunctionComponent = () => (
     </div>
     {renderImageBlock(FOLDER_NAME, 2)}
     <div className={cn["text-wrapper"]}>
-      <div className={cn["text-block"]}>
+      <div className={cn["text-block-wide"]}>
         Главная страница включает в&nbsp;себя бесконечную ленту с&nbsp;блоками
-        новостей, видео, статей и&nbsp;анонсов событий.
-      </div>
-      <div className={cn["text-block"]}>
-        При переходе в&nbsp;любой из&nbsp;блоков открывается соответствующая
-        страница с&nbsp;контентом и&nbsp;подборкой похожих материалов.
+        новостей, видео, статей и&nbsp;анонсов событий. При переходе
+        в&nbsp;любой из&nbsp;блоков открывается соответствующая страница
+        с&nbsp;контентом и&nbsp;подборкой похожих материалов.
       </div>
     </div>
     {[3, 4, 5].map((i) => renderImageBlock(FOLDER_NAME, i))}
@@ -54,7 +52,8 @@ export const Brics: React.FunctionComponent = () => (
           rel="noreferrer"
         >
           Андрей&nbsp;Черный
-        </a>.
+        </a>
+        .
       </div>
       <div className={cn["text-block"]}>
         Ниже вы&nbsp;можете полистать брендбук BRICS.
