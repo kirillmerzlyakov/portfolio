@@ -15,7 +15,6 @@ const renderMenuBlock = () => (
       className={cn["avatar"]}
       src={`./common/avatar.png`}
       alt="картинка"
-      width="290"
     ></img>
   </div>
 );

@@ -19,12 +19,11 @@
     box-sizing: border-box;
     width: @menu-width;
     min-width: @menu-width;
-    padding: 20px 40px 20px 20px;
+    padding: 20px 20px 20px 20px;
   }
 
   .avatar {
-    margin-top: 140px;
-    margin-left: 20px;
+    margin-top: 70px;
     width: 100%;
   }
 
@@ -67,8 +66,26 @@
   }
 
   @media screen and (max-width: 430px) {
+    .main-page {
+      margin-top: 0;
+    }
+
     .menu {
-      display: none;
+      box-sizing: border-box;
+      width: 100%;
+      min-width: 0;
+      padding: 0 20px;
+    }
+
+    .first-block-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .avatar {
+      margin-top: 50px;
+      margin-left: 0px;
+      width: 65%;
     }
 
     .title {
