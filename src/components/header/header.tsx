@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./header.module.less";
 import { Link, useLocation } from "react-router-dom";
-import cn from "classnames";
 
 export const Header: React.FC = (props) => {
   const { pathname } = useLocation();
@@ -12,20 +11,11 @@ export const Header: React.FC = (props) => {
       </div>
       <div className={styles["name"]}>Дарина Лачихина</div>
       <div className={styles["buttons"]}>
-        <Link
-          className={cn(styles["button"], pathname === "/" && styles["bold"])}
-          to="/"
-        >
+        <Link className={styles["button"]} to="/">
           Портфолио
         </Link>
         <div className={styles["button"]}>
-          <Link
-            className={cn(
-              styles["button"],
-              pathname === "/contacts" && styles["bold"]
-            )}
-            to="/contacts"
-          >
+          <Link className={styles["button"]} to="/contacts">
             Контакты
           </Link>
         </div>
