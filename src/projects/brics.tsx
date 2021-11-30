@@ -3,18 +3,11 @@ import { Menu } from "../components/menu/menu";
 import cn from "./projects.module.less";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import { renderImageBlock, renderTextBlock } from "./common";
-
-const TEXT_BLOCK = [
-  "Мне посчастливилось поработать с Международным центром конкурентного права и политики БРИКС в Высшей школе экономики. Сделала дизайн сайта, который ежедневно пополняется новым контентом уже на протяжении года.",
-  "Сайт состоит из 30 веб-страниц. Для каждой отрисованы адптив и по несколько задизайненных экранов для всех состояний интерактивных блоков.",
-  "Главная страница включает в себя бесконечную ленту с блоками  новостей, видео, статей и анонсов событий.",
-  "При переходе в любой из блоков открывается соответствующая страница с контентом и подборкой похожих материалов.",
-];
+import { renderImageBlock } from "./common";
 
 const FOLDER_NAME = "brics";
 
-export const Brics: React.FunctionComponent = (props) => (
+export const Brics: React.FunctionComponent = () => (
   <div className={cn["projects-content"]}>
     <Menu
       name={"BRICS competition"}
@@ -27,17 +20,32 @@ export const Brics: React.FunctionComponent = (props) => (
     />
     {renderImageBlock(FOLDER_NAME, 1)}
     <div className={cn["text-wrapper"]}>
-      {renderTextBlock(TEXT_BLOCK[0])}
-      {renderTextBlock(TEXT_BLOCK[1])}
+      <div className={cn["text-block"]}>
+        Мне посчастливилось поработать с&nbsp;Международным центром
+        конкурентного права и&nbsp;политики БРИКС в&nbsp;Высшей школе экономики.
+        Сделала дизайн сайта, который ежедневно пополняется новым контентом уже
+        на&nbsp;протяжении года.
+      </div>
+      <div className={cn["text-block"]}>
+        Сайт состоит из&nbsp;30&nbsp;веб-страниц. Для каждой отрисованы адптив
+        и&nbsp;по&nbsp;несколько задизайненных экранов для всех состояний
+        интерактивных блоков.
+      </div>
     </div>
     {renderImageBlock(FOLDER_NAME, 2)}
     <div className={cn["text-wrapper"]}>
-      {renderTextBlock(TEXT_BLOCK[2])}
-      {renderTextBlock(TEXT_BLOCK[3])}
+      <div className={cn["text-block"]}>
+        Главная страница включает в&nbsp;себя бесконечную ленту с&nbsp;блоками
+        новостей, видео, статей и&nbsp;анонсов событий.
+      </div>
+      <div className={cn["text-block"]}>
+        При переходе в&nbsp;любой из&nbsp;блоков открывается соответствующая
+        страница с&nbsp;контентом и&nbsp;подборкой похожих материалов.
+      </div>
     </div>
     {[3, 4, 5].map((i) => renderImageBlock(FOLDER_NAME, i))}
     <div className={cn["text-wrapper"]}>
-      <div className="text-block">
+      <div className={cn["text-block"]}>
         Фирменный стиль для проекта был тоже разработан мною. Логотипом
         занимался мой коллега дизайнер{" "}
         <a
@@ -45,9 +53,11 @@ export const Brics: React.FunctionComponent = (props) => (
           target="_blank"
           rel="noreferrer"
         >
-          Андрей Черный
-        </a>
-        . Ниже вы можете полистать брендбук BRICS.
+          Андрей&nbsp;Черный
+        </a>.
+      </div>
+      <div className={cn["text-block"]}>
+        Ниже вы&nbsp;можете полистать брендбук BRICS.
       </div>
     </div>
 
