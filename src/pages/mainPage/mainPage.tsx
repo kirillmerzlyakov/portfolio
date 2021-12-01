@@ -11,7 +11,7 @@ export const MainPage: React.FunctionComponent = (props) => (
     <div className={cn["items-wrapper"]}>
       <ContentItem name="Скиньскан.рф" imgName="skinscan" route="/skinscan" />
       <ContentItem name="BRICS" imgName="brics" route="/brics" />
-      <ContentItem name="CHICAGA" imgName="chicaga" route="/chicaga" />
+      {/* <ContentItem name="CHICAGA" imgName="chicaga" route="/chicaga" /> */}
       <ContentItem name="BeatsApp" imgName="beatsApp" route="/beatsapp" />
       <ContentItem name="Fibonacci" imgName="fibonacci" route="/fibonacci" />
     </div>

@@ -12,7 +12,7 @@ export const Сontent: React.FunctionComponent = (props) => (
     <Routes>
       <Route path="/skinscan" element={<SkinScan />} />
       <Route path="/brics" element={<Brics />} />
-      <Route path="/chicaga" element={<Chicaga />} />
+      {/* <Route path="/chicaga" element={<Chicaga />} /> */}
       <Route path="/beatsapp" element={<BeatsApp />} />
       <Route path="/fibonacci" element={<Fibonacci />} />
     </Routes>
