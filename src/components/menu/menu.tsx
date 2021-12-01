@@ -5,7 +5,7 @@ interface Props {
   name: string;
   city: string;
   year: string;
-  description: string;
+  description: JSX.Element;
   sourceLink?: string;
 }
 export const Menu: React.FC<Props> = (props) => (
