@@ -1,8 +1,6 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
 import cn from "./projects.module.less";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
 import { renderImg } from "./common";
 import img1 from "./media/brics/1.jpg";
 import img2 from "./media/brics/2.jpg";
@@ -20,6 +18,7 @@ import img13 from "./media/brics/13.jpg";
 import img14 from "./media/brics/14.jpg";
 import img15 from "./media/brics/15.jpg";
 import img16 from "./media/brics/16.jpg";
+import { Slider } from "./../components/slider/Slider";
 
 export const Brics: React.FC = () => (
   <div className={cn.projectsContent}>
@@ -79,22 +78,8 @@ export const Brics: React.FC = () => (
       </div>
     </div>
 
-    <Slideshow />
+    <Slider
+      slides={[img8, img9, img10, img11, img12, img13, img14, img15, img16]}
+    />
   </div>
 );
-
-const Slideshow = () => {
-  return (
-    <div className={cn.slideContainer}>
-      <Slide>
-        {[img8, img9, img10, img11, img12, img13, img14, img15, img16].map(
-          (src, index) => (
-            <div className={cn.eachSlide} key={index}>
-              {renderImg(src)}
-            </div>
-          )
-        )}
-      </Slide>
-    </div>
-  );
-};

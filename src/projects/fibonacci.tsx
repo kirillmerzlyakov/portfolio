@@ -1,9 +1,8 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
 import { renderImg, renderVideoBlock } from "./common";
+import { Slider } from "../components/slider/Slider";
 import cn from "./projects.module.less";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
 import img1 from "./media/fibonacci/1.jpg";
 import img2 from "./media/fibonacci/2.jpg";
 import img3 from "./media/fibonacci/3.jpg";
@@ -106,31 +105,19 @@ export const Fibonacci: React.FC = () => (
         и&nbsp;плакаты, уличная реклама, визитные карточки и&nbsp;конверты.
       </div>
     </div>
-    <Slideshow />
+    <Slider
+      slides={[
+        img11,
+        img12,
+        img13,
+        img14,
+        img15,
+        img16,
+        img17,
+        img18,
+        img19,
+        img20,
+      ]}
+    />
   </div>
 );
-
-const Slideshow = () => {
-  return (
-    <div className={cn.slideContainer}>
-      <Slide>
-        {[
-          img11,
-          img12,
-          img13,
-          img14,
-          img15,
-          img16,
-          img17,
-          img18,
-          img19,
-          img20,
-        ].map((src, index) => (
-          <div className={cn.eachSlide} key={index}>
-            {renderImg(src)}
-          </div>
-        ))}
-      </Slide>
-    </div>
-  );
-};
