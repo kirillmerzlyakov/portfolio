@@ -1,9 +1,19 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
-import { renderImageBlock } from "./common";
+import { renderImg } from "./common";
 import cn from "./projects.module.less";
-
-const FOLDER_NAME = "chicaga";
+import img1 from "./media/chicaga/1.jpg";
+import img2 from "./media/chicaga/2.jpg";
+import img3 from "./media/chicaga/3.jpg";
+import img4 from "./media/chicaga/4.jpg";
+import img5 from "./media/chicaga/5.jpg";
+import img6 from "./media/chicaga/6.jpg";
+import img7 from "./media/chicaga/7.jpg";
+import img8 from "./media/chicaga/8.jpg";
+import img9 from "./media/chicaga/9.jpg";
+import img10 from "./media/chicaga/10.jpg";
+import img11 from "./media/chicaga/11.jpg";
+import img12 from "./media/chicaga/12.jpg";
 
 export const Chicaga: React.FunctionComponent = () => (
   <div className={cn["projects-content"]}>
@@ -16,7 +26,7 @@ export const Chicaga: React.FunctionComponent = () => (
       }
       sourceLink="https://chicaga.ru"
     />
-    {renderImageBlock(FOLDER_NAME, 1)}
+    {renderImg(img1)}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block"]}>
         В&nbsp;2020 году мне предложили заняться доработкой и&nbsp;редизайном
@@ -29,7 +39,7 @@ export const Chicaga: React.FunctionComponent = () => (
         я&nbsp;с&nbsp;удовольствием согласилась.
       </div>
     </div>
-    {[2, 3, 4, 5].map((i) => renderImageBlock(FOLDER_NAME, i))}
+    {[img2, img3, img4, img5].map((src) => renderImg(src))}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block"]}>
         Сайт состоит из&nbsp;40&nbsp;веб-страниц. Для каждой отрисованы адптив
@@ -42,13 +52,13 @@ export const Chicaga: React.FunctionComponent = () => (
         я&nbsp;делала.
       </div>
     </div>
-    {renderImageBlock(FOLDER_NAME, 6)}
+    {renderImg(img6)}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block-wide"]}>
         Еще кое-какие экраны, которые кажутся мне симпатичными:
       </div>
     </div>
-    {[7, 8, 9].map((i) => renderImageBlock(FOLDER_NAME, i))}
+    {[img7, img8, img9].map((src) => renderImg(src))}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block-wide"]}>
         Далее представлена часть UI-кита, с&nbsp;которой, я&nbsp;и&nbsp;начала
@@ -56,6 +66,6 @@ export const Chicaga: React.FunctionComponent = () => (
         кнопки, инпуты и&nbsp;дропдауны.
       </div>
     </div>
-    {[10, 11, 12].map((i) => renderImageBlock(FOLDER_NAME, i))}
+    {[img10, img11, img12].map((src) => renderImg(src))}
   </div>
 );
