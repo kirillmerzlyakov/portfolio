@@ -1,7 +1,18 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
-import { renderImageBlock, renderVideoBlock } from "./common";
+import { renderImg, renderVideoBlock } from "./common";
 import cn from "./projects.module.less";
+import img2 from "./media/skinscan/2.jpg";
+import img3 from "./media/skinscan/3.jpg";
+import img4 from "./media/skinscan/4.jpg";
+import img5 from "./media/skinscan/5.jpg";
+import img6 from "./media/skinscan/6.jpg";
+import img7 from "./media/skinscan/7.jpg";
+import img8 from "./media/skinscan/8.jpg";
+import img9 from "./media/skinscan/9.jpg";
+import img10 from "./media/skinscan/10.jpg";
+import img11 from "./media/skinscan/11.jpg";
+import img12 from "./media/skinscan/12.jpg";
 
 const VIDEO_SOURCES: { [key: string]: string } = {
   "Act-Contract-0": "https://player.vimeo.com/video/643858135",
@@ -10,8 +21,6 @@ const VIDEO_SOURCES: { [key: string]: string } = {
   "Act-Contract-2":
     "https://player.vimeo.com/video/645741574?h=f4882dc24c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 };
-
-const FOLDER_NAME = "skinscan";
 
 export const SkinScan: React.FunctionComponent = () => {
   return (
@@ -39,7 +48,8 @@ export const SkinScan: React.FunctionComponent = () => {
           и&nbsp;шрифты, отрисовала логотип и&nbsp;иллюстрации.
         </div>
       </div>
-      {[11, 12].map((a) => renderImageBlock(FOLDER_NAME, a))}
+      {renderImg(img11)}
+      {renderImg(img12)}
       <div className={cn["text-wrapper"]}>
         <div className={cn["text-block"]}>
           Основной задачей было сделать новый дизайн сервиса удобным
@@ -54,7 +64,8 @@ export const SkinScan: React.FunctionComponent = () => {
           и&nbsp;использовать ранее загруженные.
         </div>
       </div>
-      {[8, 9].map((a) => renderImageBlock(FOLDER_NAME, a))}
+      {renderImg(img8)}
+      {renderImg(img9)}
       <div className={cn["text-wrapper"]}>
         <div className={cn["text-block-wide"]}>
           Мы&nbsp;спроектировали интерфейс оплаты и&nbsp;оформления подписки
@@ -62,7 +73,7 @@ export const SkinScan: React.FunctionComponent = () => {
           ввести данные. Такое решение нативно и&nbsp;удобно.
         </div>
       </div>
-      {renderImageBlock(FOLDER_NAME, 10)}
+      {renderImg(img10)}
       <div className={cn["text-wrapper"]}>
         <div className={cn["text-block-wide"]}>
           Далее нами с&nbsp;клиентом было принято решение по&nbsp;разработке
@@ -71,7 +82,7 @@ export const SkinScan: React.FunctionComponent = () => {
           на&nbsp;международный.
         </div>
       </div>
-      {[2, 3, 4, 5, 6, 7].map((a) => renderImageBlock(FOLDER_NAME, a))}
+      {[img2, img3, img4, img5, img6, img7].map((src) => renderImg(src))}
       <div className={cn["text-wrapper"]}>
         <div className={cn["text-block-wide"]}>
           Для каждого проекта обязательно прорабатываю взаимодействия
