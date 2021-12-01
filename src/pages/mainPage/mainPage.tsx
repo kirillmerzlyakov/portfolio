@@ -1,12 +1,15 @@
 import React from "react";
 import cn from "./mainPage.module.less";
 import { ContentItem } from "./contentItem";
+import titul from "../media/titul.jpg";
 
 export const MainPage: React.FunctionComponent = (props) => (
   <div className={cn["main-page"]}>
     <div className={cn["first-block-wrapper"]}>
       {renderMenuBlock()}
-      {renderTitulBlock()}
+      <div className={cn["title"]}>
+        <img className={cn["image"]} src={titul} alt="картинка"></img>
+      </div>
     </div>
     <div className={cn["items-wrapper"]}>
       <ContentItem name="Скиньскан.рф" imgName="skinscan" route="/skinscan" />
@@ -25,15 +28,5 @@ const renderMenuBlock = () => (
       <br />
       дизайнер
     </div>
-  </div>
-);
-
-const renderTitulBlock = () => (
-  <div className={cn["title"]}>
-    <img
-      className={cn["image"]}
-      src={`./common/titul.jpg`}
-      alt="картинка"
-    ></img>
   </div>
 );
