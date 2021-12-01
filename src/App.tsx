@@ -10,7 +10,7 @@ import { useLocation } from "react-router-dom";
 function App() {
   const { pathname } = useLocation();
   return (
-    <div className={cn["app"]}>
+    <div className={cn.app}>
       <Header />
       <Routes>
         <Route path="/" element={<MainPage />} />
