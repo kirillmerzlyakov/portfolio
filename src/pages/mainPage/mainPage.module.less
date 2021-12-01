@@ -1,13 +1,13 @@
 @import "../../components/shared.module.less";
 
 :local {
-  .main-page {
+  .mainPage {
     display: flex;
     flex-direction: column;
     margin-top: @header-height;
   }
 
-  .first-block-wrapper {
+  .firstBlockWrapper {
     display: flex;
     flex-direction: row;
   }
@@ -22,7 +22,7 @@
     padding: 20px 40px 20px 20px;
   }
 
-  .menu-text {
+  .menuText {
     color: #bbb;
   }
 
@@ -40,31 +40,14 @@
     padding: 0;
   }
 
-  .text-1 {
-    font-size: 150px;
-    line-height: 165px;
-    margin-right: 10px;
-  }
-  .text-2 {
-    height: 100%;
-    color: #e85211;
-    font-size: 80px;
-    line-height: 114px;
-  }
-  .text-3 {
-    font-size: 222px;
-    line-height: 211px;
-    color: #e85211;
-  }
-
-  .items-wrapper {
+  .itemsWrapper {
     display: flex;
     flex-wrap: wrap;
     margin-top: 120px;
     justify-content: flex-start;
   }
 
-  .content-item {
+  .contentItem {
     width: 48%;
     padding: 1%;
     display: flex;
@@ -73,7 +56,7 @@
     transition-duration: 0.2s;
   }
 
-  .content-item:hover {
+  .contentItem:hover {
     transform: scale(1.01);
   }
 
@@ -93,18 +76,10 @@
     display: block;
   }
 
-  .item-image {
+  .itemImage {
     display: block;
     margin: 0 auto;
     width: 100%;
-  }
-
-  .titul {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    margin: 0;
-    padding: 0;
   }
 
   @media screen and (max-width: 430px) {
@@ -116,13 +91,13 @@
       padding: 0 15px;
     }
 
-    .content-item {
+    .contentItem {
       width: 100%;
       margin-bottom: 20px;
       padding: 0px;
     }
 
-    .content-item:hover {
+    .contentItem:hover {
       transform: none;
     }
   }
