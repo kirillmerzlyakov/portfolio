@@ -1,21 +1,14 @@
 import cn from "./contacts.module.less";
+import avatar from "../media/avatar.png";
 
 export const Contacts = () => (
   <div className={cn["main-page"]}>
     <div className={cn["first-block-wrapper"]}>
-      {renderMenuBlock()}
+      <div className={cn["menu"]}>
+        <img className={cn["avatar"]} src={avatar} alt="картинка"></img>
+      </div>
       {renderTitulBlock()}
     </div>
-  </div>
-);
-
-const renderMenuBlock = () => (
-  <div className={cn["menu"]}>
-    <img
-      className={cn["avatar"]}
-      src={`./common/avatar.png`}
-      alt="картинка"
-    ></img>
   </div>
 );
 
