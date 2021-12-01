@@ -8,6 +8,14 @@ export const renderImageBlock = (folder: string, number: number) => (
   />
 );
 
+export const renderImg = (src: string) => (
+  <img
+    className={cn["image"]}
+    src={src}
+    alt="здесь должна быть пикча крутого интерфейса"
+  />
+);
+
 export function renderVideoBlock(title: string, src: string) {
   return (
     <div className={cn["thumb-wrap"]}>

@@ -3,9 +3,23 @@ import { Menu } from "../components/menu/menu";
 import cn from "./projects.module.less";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import { renderImageBlock } from "./common";
-
-const FOLDER_NAME = "brics";
+import { renderImg } from "./common";
+import img1 from "./media/brics/1.jpg";
+import img2 from "./media/brics/2.jpg";
+import img3 from "./media/brics/3.jpg";
+import img4 from "./media/brics/4.jpg";
+import img5 from "./media/brics/5.jpg";
+import img6 from "./media/brics/6.jpg";
+import img7 from "./media/brics/7.jpg";
+import img8 from "./media/brics/8.jpg";
+import img9 from "./media/brics/9.jpg";
+import img10 from "./media/brics/10.jpg";
+import img11 from "./media/brics/11.jpg";
+import img12 from "./media/brics/12.jpg";
+import img13 from "./media/brics/13.jpg";
+import img14 from "./media/brics/14.jpg";
+import img15 from "./media/brics/15.jpg";
+import img16 from "./media/brics/16.jpg";
 
 export const Brics: React.FunctionComponent = () => (
   <div className={cn["projects-content"]}>
@@ -18,7 +32,7 @@ export const Brics: React.FunctionComponent = () => (
       }
       sourceLink="https://bricscompetition.org/"
     />
-    {renderImageBlock(FOLDER_NAME, 1)}
+    {renderImg(img1)}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block"]}>
         Мне посчастливилось поработать с&nbsp;Международным центром
@@ -32,7 +46,7 @@ export const Brics: React.FunctionComponent = () => (
         интерактивных блоков.
       </div>
     </div>
-    {renderImageBlock(FOLDER_NAME, 2)}
+    {renderImg(img2)}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block-wide"]}>
         Главная страница включает в&nbsp;себя бесконечную ленту с&nbsp;блоками
@@ -41,7 +55,7 @@ export const Brics: React.FunctionComponent = () => (
         с&nbsp;контентом и&nbsp;подборкой похожих материалов.
       </div>
     </div>
-    {[3, 4, 5].map((i) => renderImageBlock(FOLDER_NAME, i))}
+    {[img3, img4, img5].map((src) => renderImg(src))}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block"]}>
         Фирменный стиль для проекта был тоже разработан мною.
@@ -68,11 +82,13 @@ const Slideshow = () => {
   return (
     <div className={cn["slide-container"]}>
       <Slide>
-        {[8, 9, 10, 11, 12, 13, 14, 15, 16].map((v, index) => (
-          <div className={cn["each-slide"]} key={index}>
-            {renderImageBlock(FOLDER_NAME, v)}
-          </div>
-        ))}
+        {[img8, img9, img10, img11, img12, img13, img14, img15, img16].map(
+          (src, index) => (
+            <div className={cn["each-slide"]} key={index}>
+              {renderImg(src)}
+            </div>
+          )
+        )}
       </Slide>
     </div>
   );
