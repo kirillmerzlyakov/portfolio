@@ -1,22 +1,22 @@
 import React from "react";
-import s from "./header.module.less";
+import cn from "./header.module.less";
 import { Link, useLocation } from "react-router-dom";
 
 export const Header: React.FC = (props) => {
   const { pathname } = useLocation();
   return (
-    <div className={s.header}>
-      <div className={s.navigation}>
+    <div className={cn.header}>
+      <div className={cn.navigation}>
         {pathname !== "/" && renderBackArrow()}
       </div>
-      <div className={s.name}>
-        <Link className={s.nameLink} to="/">
+      <div className={cn.name}>
+        <Link className={cn.nameLink} to="/">
           Дарина Лачихина
         </Link>
       </div>
-      <div className={s.buttons}>
+      <div className={cn.buttons}>
         <div
-          className={s.button}
+          className={cn.button}
           onClick={() => {
             if (pathname === "/") {
               scrollTo(700);
@@ -27,8 +27,8 @@ export const Header: React.FC = (props) => {
         >
           Портфолио
         </div>
-        <div className={s.button}>
-          <Link className={s.button} to="/contacts">
+        <div className={cn.button}>
+          <Link className={cn.button} to="/contacts">
             Контакты
           </Link>
         </div>
@@ -38,9 +38,9 @@ export const Header: React.FC = (props) => {
 };
 
 const renderBackArrow = () => (
-  <Link className={s.navigateLink} to="/">
-    <div className={s.arrowSvg}></div>
-    <span className={s.backText}>Назад</span>
+  <Link className={cn.navigateLink} to="/">
+    <div className={cn.arrowSvg}></div>
+    <span className={cn.backText}>Назад</span>
   </Link>
 );
 
