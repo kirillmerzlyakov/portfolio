@@ -1,11 +1,12 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
-import { renderImageBlock } from "./common";
+import { renderImg } from "./common";
 import cn from "./projects.module.less";
+import img1 from "./media/beatsApp/1.jpg";
+import img2 from "./media/beatsApp/2.jpg";
+import img3 from "./media/beatsApp/3.jpg";
 
-const FOLDER_NAME = "beatsApp";
-
-export const BeatsApp: React.FunctionComponent = (props) => (
+export const BeatsApp: React.FunctionComponent = () => (
   <div className={cn["projects-content"]}>
     <Menu
       name={"BeatsApp"}
@@ -15,7 +16,7 @@ export const BeatsApp: React.FunctionComponent = (props) => (
         "Стриминговый сервис, позволяющий легально прослушивать музыкальные композиции, аудиокниги и подкасты, не скачивая их на устройство. Доступен в виде приложений для всех операционных систем."
       }
     />
-    {renderImageBlock(FOLDER_NAME, 1)}
+    {renderImg(img1)}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block"]}>
         BeatsApp&nbsp;&mdash; мобильное приложене для прослушивания музыки,
@@ -24,6 +25,7 @@ export const BeatsApp: React.FunctionComponent = (props) => (
         Приложение еще находится в&nbsp;разработке.
       </div>
     </div>
-    {[2, 3].map((i) => renderImageBlock(FOLDER_NAME, i))}
+    {renderImg(img2)}
+    {renderImg(img3)}
   </div>
 );
