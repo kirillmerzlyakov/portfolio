@@ -2,7 +2,7 @@ import React from "react";
 import cn from "./header.module.less";
 import { Link, useLocation } from "react-router-dom";
 
-export const Header: React.FC = (props) => {
+export const Header: React.FC = () => {
   const { pathname } = useLocation();
   return (
     <div className={cn.header}>
@@ -19,7 +19,9 @@ export const Header: React.FC = (props) => {
           className={cn.button}
           onClick={() => {
             if (pathname === "/") {
-              scrollTo(700);
+              document
+                .getElementsByTagName("img")[1]
+                .scrollIntoView({ behavior: "smooth", block: "center" });
             } else {
               window.location.pathname = "/";
             }
@@ -43,7 +45,3 @@ const renderBackArrow = () => (
     <span className={cn.backText}>Назад</span>
   </Link>
 );
-
-function scrollTo(y: number) {
-  window.scrollTo({ top: y });
-}
