@@ -1,5 +1,6 @@
 import cn from "./contacts.module.less";
 import avatar from "../media/avatar.png";
+import contacts from "../media/contacts.jpg";
 
 export const Contacts = () => (
   <div className={cn["main-page"]}>
@@ -15,11 +16,7 @@ export const Contacts = () => (
 const renderTitulBlock = () => (
   <div className={cn["title"]}>
     <div className={cn["wrapper"]}>
-      <img
-        className={cn["contacts"]}
-        src={`./common/contacts.jpg`}
-        alt="картинка"
-      ></img>
+      <img className={cn["contacts"]} src={contacts} alt="картинка"></img>
       <div className={cn["contact-block"]}>
         <div className={cn["contact-block1"]}>Напишите мне:</div>
         <div className={cn["contact-block2"]}>e. lachikhina2017@yandex.ru</div>
