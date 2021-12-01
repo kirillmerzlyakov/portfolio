@@ -1,11 +1,29 @@
 import React from "react";
 import { Menu } from "../components/menu/menu";
-import { renderImageBlock, renderVideoBlock } from "./common";
+import { renderImg, renderVideoBlock } from "./common";
 import cn from "./projects.module.less";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-
-const FOLDER_NAME = "fibonacci";
+import img1 from "./media/fibonacci/1.jpg";
+import img2 from "./media/fibonacci/2.jpg";
+import img3 from "./media/fibonacci/3.jpg";
+import img4 from "./media/fibonacci/4.jpg";
+import img5 from "./media/fibonacci/5.jpg";
+import img6 from "./media/fibonacci/6.jpg";
+import img7 from "./media/fibonacci/7.jpg";
+import img8 from "./media/fibonacci/8.jpg";
+import img9 from "./media/fibonacci/9.jpg";
+import img10 from "./media/fibonacci/10.jpg";
+import img11 from "./media/fibonacci/11.jpg";
+import img12 from "./media/fibonacci/12.jpg";
+import img13 from "./media/fibonacci/13.jpg";
+import img14 from "./media/fibonacci/14.jpg";
+import img15 from "./media/fibonacci/15.jpg";
+import img16 from "./media/fibonacci/16.jpg";
+import img17 from "./media/fibonacci/17.jpg";
+import img18 from "./media/fibonacci/18.jpg";
+import img19 from "./media/fibonacci/19.jpg";
+import img20 from "./media/fibonacci/20.jpg";
 
 export const Fibonacci: React.FunctionComponent = () => (
   <div className={cn["projects-content"]}>
@@ -18,7 +36,7 @@ export const Fibonacci: React.FunctionComponent = () => (
       }
       sourceLink={"http://a.elpycode.ru"}
     />
-    {renderImageBlock(FOLDER_NAME, 1)}
+    {renderImg(img1)}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block"]}>
         Fibonacci. Московская компания-бутик, которая создает жилое пространство
@@ -31,7 +49,7 @@ export const Fibonacci: React.FunctionComponent = () => (
         брендбука и&nbsp;key-visual.
       </div>
     </div>
-    {renderImageBlock(FOLDER_NAME, 2)}
+    {renderImg(img2)}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block"]}>
         В&nbsp;течение работы над проектом, я&nbsp;разработала несколько
@@ -45,7 +63,7 @@ export const Fibonacci: React.FunctionComponent = () => (
         палитра.
       </div>
     </div>
-    {[3, 4, 5, 6].map((i) => renderImageBlock(FOLDER_NAME, i))}
+    {[img3, img4, img5, img6].map((src) => renderImg(src))}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block-wide"]}>
         Прототип-демонстрация работы блока внутренних страниц
@@ -68,7 +86,7 @@ export const Fibonacci: React.FunctionComponent = () => (
         и&nbsp;интерактивная карта с&nbsp;местоположением комплекса.
       </div>
     </div>
-    {[7, 8, 9, 10].map((i) => renderImageBlock(FOLDER_NAME, i))}
+    {[img7, img8, img9, img10].map((src) => renderImg(src))}
     <div className={cn["text-wrapper"]}>
       <div className={cn["text-block"]}>
         Гайдлайн помогает сориентироваться и&nbsp;помогает понять как
@@ -90,9 +108,20 @@ const Slideshow = () => {
   return (
     <div className={cn["slide-container"]}>
       <Slide>
-        {[11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map((v, index) => (
+        {[
+          img11,
+          img12,
+          img13,
+          img14,
+          img15,
+          img16,
+          img17,
+          img18,
+          img19,
+          img20,
+        ].map((src, index) => (
           <div className={cn["each-slide"]} key={index}>
-            {renderImageBlock(FOLDER_NAME, v)}
+            {renderImg(src)}
           </div>
         ))}
       </Slide>
