@@ -3,6 +3,18 @@ import cn from "./mainPage.module.less";
 import { ContentItem } from "./contentItem";
 import titul from "../media/titul.jpg";
 
+import skinscanImg from "../media/tiles/skinscan.jpg";
+import skinscanGif from "../media/tiles/skinscan.gif";
+
+import bricsImg from "../media/tiles/brics.jpg";
+import bricsGif from "../media/tiles/brics.gif";
+
+import beatsAppImg from "../media/tiles/beatsApp.jpg";
+import beatsAppGif from "../media/tiles/beatsApp.gif";
+
+import fibonacciImg from "../media/tiles/fibonacci.jpg";
+import fibonacciGif from "../media/tiles/fibonacci.gif";
+
 export const MainPage: React.FunctionComponent = (props) => (
   <div className={cn["main-page"]}>
     <div className={cn["first-block-wrapper"]}>
@@ -12,11 +24,31 @@ export const MainPage: React.FunctionComponent = (props) => (
       </div>
     </div>
     <div className={cn["items-wrapper"]}>
-      <ContentItem name="Скиньскан.рф" imgName="skinscan" route="/skinscan" />
-      <ContentItem name="BRICS" imgName="brics" route="/brics" />
+      <ContentItem
+        name="Скиньскан.рф"
+        imgSrc={skinscanImg}
+        gifSrc={skinscanGif}
+        route="/skinscan"
+      />
+      <ContentItem
+        name="BRICS"
+        imgSrc={bricsImg}
+        gifSrc={bricsGif}
+        route="/brics"
+      />
       {/* <ContentItem name="CHICAGA" imgName="chicaga" route="/chicaga" /> */}
-      <ContentItem name="BeatsApp" imgName="beatsApp" route="/beatsapp" />
-      <ContentItem name="Fibonacci" imgName="fibonacci" route="/fibonacci" />
+      <ContentItem
+        name="BeatsApp"
+        imgSrc={beatsAppImg}
+        gifSrc={beatsAppGif}
+        route="/beatsapp"
+      />
+      <ContentItem
+        name="Fibonacci"
+        imgSrc={fibonacciImg}
+        gifSrc={fibonacciGif}
+        route="/fibonacci"
+      />
     </div>
   </div>
 );

@@ -5,7 +5,8 @@ import cn from "./mainPage.module.less";
 interface Props {
   name: string;
   route: string;
-  imgName: string;
+  imgSrc: string;
+  gifSrc: string;
 }
 
 export const ContentItem: React.FunctionComponent<Props> = (props) => {
@@ -24,7 +25,7 @@ export const ContentItem: React.FunctionComponent<Props> = (props) => {
       <Link to={props.route}>
         <img
           className={cn["item-image"]}
-          src={`./tiles/${props.imgName}.${isHovering ? "gif" : "jpg"}`}
+          src={isHovering ? props.gifSrc : props.imgSrc}
           alt="картинка"
         ></img>
       </Link>
