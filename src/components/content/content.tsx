@@ -7,8 +7,8 @@ import { Chicaga } from "../../projects/chicaga";
 import { BeatsApp } from "../../projects/beatsApp";
 import { Fibonacci } from "../../projects/fibonacci";
 
-export const Сontent: React.FunctionComponent = (props) => (
-  <div className={cn["content"]}>
+export const Сontent: React.FC = () => (
+  <div className={cn.content}>
     <Routes>
       <Route path="/skinscan" element={<SkinScan />} />
       <Route path="/brics" element={<Brics />} />
