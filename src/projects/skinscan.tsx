@@ -24,7 +24,7 @@ const VIDEO_SOURCES: { [key: string]: string } = {
 
 export const SkinScan: React.FunctionComponent = () => {
   return (
-    <div className={cn["projects-content"]}>
+    <div className={cn.projectsContent}>
       <Menu
         name={"Скиньскан.рф"}
         city={"Екатеринбург"}
@@ -35,14 +35,14 @@ export const SkinScan: React.FunctionComponent = () => {
         sourceLink={"https://скиньскан.рф"}
       />
       {renderVideoBlock("Act-Contract-0", VIDEO_SOURCES["Act-Contract-0"])}
-      <div className={cn["text-wrapper"]}>
-        <div className={cn["text-block"]}>
+      <div className={cn.textWrapper}>
+        <div className={cn.textBlock}>
           В&nbsp;январе 2021&nbsp;я получила запрос на&nbsp;редизайн готового
           продукта Act-Contract (старое название). Интерфейс сервиса устарел,
           не&nbsp;выполнял все задачи клиента, фирменный стиль хотелось
           освежить.
         </div>
-        <div className={cn["text-block"]}>
+        <div className={cn.textBlock}>
           Вместе с&nbsp;заказчиком мы&nbsp;провели полный ребрендинг
           и&nbsp;сменили название. Я&nbsp;выбрала новые фирменные цвета
           и&nbsp;шрифты, отрисовала логотип и&nbsp;иллюстрации.
@@ -50,14 +50,14 @@ export const SkinScan: React.FunctionComponent = () => {
       </div>
       {renderImg(img11)}
       {renderImg(img12)}
-      <div className={cn["text-wrapper"]}>
-        <div className={cn["text-block"]}>
+      <div className={cn.textWrapper}>
+        <div className={cn.textBlock}>
           Основной задачей было сделать новый дизайн сервиса удобным
           и&nbsp;интуитивно понятным с&nbsp;минимальным пользовательским путем.
           Кроме того, мы&nbsp;хотели внедрить в&nbsp;него новые функции,
           не&nbsp;меняя старые прототипы глобально.
         </div>
-        <div className={cn["text-block"]}>
+        <div className={cn.textBlock}>
           Вот, что получилось. Панель управления элементами справа.
           Слева&nbsp;&mdash; навигация по&nbsp;документу и&nbsp;панель
           добавления элементов, с&nbsp;возможностью подгружать новые
@@ -66,16 +66,16 @@ export const SkinScan: React.FunctionComponent = () => {
       </div>
       {renderImg(img8)}
       {renderImg(img9)}
-      <div className={cn["text-wrapper"]}>
-        <div className={cn["text-block-wide"]}>
+      <div className={cn.textWrapper}>
+        <div className={cn.textBlockWide}>
           Мы&nbsp;спроектировали интерфейс оплаты и&nbsp;оформления подписки
           на&nbsp;сервис с&nbsp;интерактивной картой, в&nbsp;которую нужно
           ввести данные. Такое решение нативно и&nbsp;удобно.
         </div>
       </div>
       {renderImg(img10)}
-      <div className={cn["text-wrapper"]}>
-        <div className={cn["text-block-wide"]}>
+      <div className={cn.textWrapper}>
+        <div className={cn.textBlockWide}>
           Далее нами с&nbsp;клиентом было принято решение по&nbsp;разработке
           продающего лендинга. Продукт завоевал достаточно крупную аудиторию
           на&nbsp;российском рынке, теперь мы&nbsp;были готовы выйти
@@ -83,8 +83,8 @@ export const SkinScan: React.FunctionComponent = () => {
         </div>
       </div>
       {[img2, img3, img4, img5, img6, img7].map((src) => renderImg(src))}
-      <div className={cn["text-wrapper"]}>
-        <div className={cn["text-block-wide"]}>
+      <div className={cn.textWrapper}>
+        <div className={cn.textBlockWide}>
           Для каждого проекта обязательно прорабатываю взаимодействия
           и&nbsp;анимацию&nbsp;&mdash; это&nbsp;неотъемлемая часть хорошего
           пользовательского опыта.

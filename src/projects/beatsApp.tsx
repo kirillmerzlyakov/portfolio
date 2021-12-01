@@ -7,7 +7,7 @@ import img2 from "./media/beatsApp/2.jpg";
 import img3 from "./media/beatsApp/3.jpg";
 
 export const BeatsApp: React.FunctionComponent = () => (
-  <div className={cn["projects-content"]}>
+  <div className={cn.projectsContent}>
     <Menu
       name={"BeatsApp"}
       city={"Тель-Авив"}
@@ -17,8 +17,8 @@ export const BeatsApp: React.FunctionComponent = () => (
       }
     />
     {renderImg(img1)}
-    <div className={cn["text-wrapper"]}>
-      <div className={cn["text-block"]}>
+    <div className={cn.textWrapper}>
+      <div className={cn.textBlock}>
         BeatsApp&nbsp;&mdash; мобильное приложене для прослушивания музыки,
         которое я&nbsp;разрабатывала для стартапа из&nbsp;Израиля. Ниже
         представлены несколько экранов, которые раскрывают суть проекта.

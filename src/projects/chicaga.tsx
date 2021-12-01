@@ -16,7 +16,7 @@ import img11 from "./media/chicaga/11.jpg";
 import img12 from "./media/chicaga/12.jpg";
 
 export const Chicaga: React.FunctionComponent = () => (
-  <div className={cn["projects-content"]}>
+  <div className={cn.projectsContent}>
     <Menu
       name={"CHICAGA"}
       city={"Санкт-Петербург"}
@@ -27,12 +27,12 @@ export const Chicaga: React.FunctionComponent = () => (
       sourceLink="https://chicaga.ru"
     />
     {renderImg(img1)}
-    <div className={cn["text-wrapper"]}>
-      <div className={cn["text-block"]}>
+    <div className={cn.textWrapper}>
+      <div className={cn.textBlock}>
         В&nbsp;2020 году мне предложили заняться доработкой и&nbsp;редизайном
         сайта для сети школ английского языка Chicaga.
       </div>
-      <div className={cn["text-block"]}>
+      <div className={cn.textBlock}>
         Конечно, всегда интереснее работать над проектами без дизайна, которые
         нужно создавать с&nbsp;нуля. Но&nbsp;стилистика, заданная командой
         Chicaga показалась мне необычной и&nbsp;привлекательной, поэтому
@@ -40,27 +40,27 @@ export const Chicaga: React.FunctionComponent = () => (
       </div>
     </div>
     {[img2, img3, img4, img5].map((src) => renderImg(src))}
-    <div className={cn["text-wrapper"]}>
-      <div className={cn["text-block"]}>
+    <div className={cn.textWrapper}>
+      <div className={cn.textBlock}>
         Сайт состоит из&nbsp;40&nbsp;веб-страниц. Для каждой отрисованы адптив
         и&nbsp;по&nbsp;несколько задизайненных экранов для всех состояний
         интерактивных блоков.
       </div>
-      <div className={cn["text-block"]}>
+      <div className={cn.textBlock}>
         На&nbsp;картинке изображены только мобильные версии сайта и&nbsp;часть
         библиотеки компонентов. Это один из&nbsp;самых больших проектов, которые
         я&nbsp;делала.
       </div>
     </div>
     {renderImg(img6)}
-    <div className={cn["text-wrapper"]}>
-      <div className={cn["text-block-wide"]}>
+    <div className={cn.textWrapper}>
+      <div className={cn.textBlockWide}>
         Еще кое-какие экраны, которые кажутся мне симпатичными:
       </div>
     </div>
     {[img7, img8, img9].map((src) => renderImg(src))}
-    <div className={cn["text-wrapper"]}>
-      <div className={cn["text-block-wide"]}>
+    <div className={cn.textWrapper}>
+      <div className={cn.textBlockWide}>
         Далее представлена часть UI-кита, с&nbsp;которой, я&nbsp;и&nbsp;начала
         работу. Выбрали и&nbsp;утвердили цветовую гамму, шрифы, проработали
         кнопки, инпуты и&nbsp;дропдауны.

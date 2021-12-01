@@ -22,7 +22,7 @@ import img15 from "./media/brics/15.jpg";
 import img16 from "./media/brics/16.jpg";
 
 export const Brics: React.FunctionComponent = () => (
-  <div className={cn["projects-content"]}>
+  <div className={cn.projectsContent}>
     <Menu
       name={"BRICS competition"}
       city={"Екатеринбург"}
@@ -33,22 +33,22 @@ export const Brics: React.FunctionComponent = () => (
       sourceLink="https://bricscompetition.org/"
     />
     {renderImg(img1)}
-    <div className={cn["text-wrapper"]}>
-      <div className={cn["text-block"]}>
+    <div className={cn.textWrapper}>
+      <div className={cn.textBlock}>
         Мне посчастливилось поработать с&nbsp;Международным центром
         конкурентного права и&nbsp;политики БРИКС в&nbsp;Высшей школе экономики.
         Сделала дизайн сайта, который ежедневно пополняется новым контентом уже
         на&nbsp;протяжении года.
       </div>
-      <div className={cn["text-block"]}>
+      <div className={cn.textBlock}>
         Сайт состоит из&nbsp;30&nbsp;веб-страниц. Для каждой отрисованы адптив
         и&nbsp;по&nbsp;несколько задизайненных экранов для всех состояний
         интерактивных блоков.
       </div>
     </div>
     {renderImg(img2)}
-    <div className={cn["text-wrapper"]}>
-      <div className={cn["text-block-wide"]}>
+    <div className={cn.textWrapper}>
+      <div className={cn.textBlockWide}>
         Главная страница включает в&nbsp;себя бесконечную ленту с&nbsp;блоками
         новостей, видео, статей и&nbsp;анонсов событий. При переходе
         в&nbsp;любой из&nbsp;блоков открывается соответствующая страница
@@ -56,8 +56,8 @@ export const Brics: React.FunctionComponent = () => (
       </div>
     </div>
     {[img3, img4, img5].map((src) => renderImg(src))}
-    <div className={cn["text-wrapper"]}>
-      <div className={cn["text-block"]}>
+    <div className={cn.textWrapper}>
+      <div className={cn.textBlock}>
         Фирменный стиль для проекта был тоже разработан мною.
         Логотипом&nbsp;занимался мой коллега дизайнер{" "}
         <a
@@ -69,7 +69,7 @@ export const Brics: React.FunctionComponent = () => (
         </a>
         .
       </div>
-      <div className={cn["text-block"]}>
+      <div className={cn.textBlock}>
         Ниже вы&nbsp;можете полистать брендбук BRICS.
       </div>
     </div>
@@ -80,11 +80,11 @@ export const Brics: React.FunctionComponent = () => (
 
 const Slideshow = () => {
   return (
-    <div className={cn["slide-container"]}>
+    <div className={cn.slideContainer}>
       <Slide>
         {[img8, img9, img10, img11, img12, img13, img14, img15, img16].map(
           (src, index) => (
-            <div className={cn["each-slide"]} key={index}>
+            <div className={cn.eachSlide} key={index}>
               {renderImg(src)}
             </div>
           )

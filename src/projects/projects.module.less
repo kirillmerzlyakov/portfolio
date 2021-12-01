@@ -1,7 +1,7 @@
 @import "../components/shared.module.less";
 
 :local {
-  .projects-content {
+  .projectsContent {
     display: flex;
     position: relative;
     flex-grow: 1;
@@ -17,14 +17,14 @@
     padding: 0;
   }
 
-  .thumb-wrap {
+  .thumbWrap {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
   }
 
-  .thumb-wrap iframe {
+  .thumbWrap iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -34,7 +34,7 @@
     outline-width: 0;
   }
 
-  .text-wrapper {
+  .textWrapper {
     display: flex;
     position: relative;
     justify-content: start;
@@ -43,24 +43,24 @@
     padding: 80px 0px 40px 0px;
   }
 
-  .text-block {
+  .textBlock {
     box-sizing: border-box;
     width: 50%;
     padding-right: 150px;
   }
 
-  .text-block-wide {
+  .textBlockWide {
     box-sizing: border-box;
     padding-right: 150px;
     width: 60%;
   }
 
   @media screen and (max-width: 430px) {
-    .projects-content {
+    .projectsContent {
       margin: 0;
     }
 
-    .text-wrapper {
+    .textWrapper {
       flex-direction: column;
       padding: 20px 10px;
       :first-child {
@@ -69,7 +69,8 @@
       }
     }
 
-    .text-block, .text-block-wide {
+    .textBlock,
+    .textBlockWide {
       width: 100%;
       padding-right: 0px;
     }
