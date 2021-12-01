@@ -19,7 +19,11 @@ const renderTitulBlock = () => (
       <img className={cn.contacts} src={contacts} alt="картинка"></img>
       <div className={cn.contactBlock}>
         <div className={cn.contactBlock1}>Напишите мне:</div>
-        <div className={cn.contactBlock2}>e. lachikhina2017@yandex.ru</div>
+        <div className={cn.contactBlock2}>
+          <a className={cn.phone} href="mailto:lachikhina2017@yandex.ru">
+            e. lachikhina2017@yandex.ru
+          </a>
+        </div>
         <a className={cn.phone} href="tel:79321239426">
           t. +7 932 123 9426
         </a>
