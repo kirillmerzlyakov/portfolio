@@ -22,7 +22,7 @@ const VIDEO_SOURCES: { [key: string]: string } = {
     "https://player.vimeo.com/video/645741574?h=f4882dc24c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 };
 
-export const SkinScan: React.FunctionComponent = () => {
+export const SkinScan: React.FC = () => {
   return (
     <div className={cn.projectsContent}>
       <Menu

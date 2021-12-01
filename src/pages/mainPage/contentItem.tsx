@@ -9,7 +9,7 @@ interface Props {
   gifSrc: string;
 }
 
-export const ContentItem: React.FunctionComponent<Props> = (props) => {
+export const ContentItem: React.FC<Props> = (props) => {
   const [isHovering, setIsHovering] = useState(false);
   return (
     <div

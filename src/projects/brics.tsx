@@ -21,7 +21,7 @@ import img14 from "./media/brics/14.jpg";
 import img15 from "./media/brics/15.jpg";
 import img16 from "./media/brics/16.jpg";
 
-export const Brics: React.FunctionComponent = () => (
+export const Brics: React.FC = () => (
   <div className={cn.projectsContent}>
     <Menu
       name={"BRICS competition"}

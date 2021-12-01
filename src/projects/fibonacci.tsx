@@ -25,7 +25,7 @@ import img18 from "./media/fibonacci/18.jpg";
 import img19 from "./media/fibonacci/19.jpg";
 import img20 from "./media/fibonacci/20.jpg";
 
-export const Fibonacci: React.FunctionComponent = () => (
+export const Fibonacci: React.FC = () => (
   <div className={cn.projectsContent}>
     <Menu
       name={"Fibonacci"}

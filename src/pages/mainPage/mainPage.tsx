@@ -11,7 +11,7 @@ import beatsAppGif from "../media/tiles/beatsApp.gif";
 import fibonacciImg from "../media/tiles/fibonacci.jpg";
 import fibonacciGif from "../media/tiles/fibonacci.gif";
 
-export const MainPage: React.FunctionComponent = (props) => (
+export const MainPage: React.FC = () => (
   <div className={cn.mainPage}>
     <div className={cn.firstBlockWrapper}>
       {renderMenuBlock()}

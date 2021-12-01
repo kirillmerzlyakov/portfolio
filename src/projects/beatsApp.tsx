@@ -6,7 +6,7 @@ import img1 from "./media/beatsApp/1.jpg";
 import img2 from "./media/beatsApp/2.jpg";
 import img3 from "./media/beatsApp/3.jpg";
 
-export const BeatsApp: React.FunctionComponent = () => (
+export const BeatsApp: React.FC = () => (
   <div className={cn.projectsContent}>
     <Menu
       name={"BeatsApp"}

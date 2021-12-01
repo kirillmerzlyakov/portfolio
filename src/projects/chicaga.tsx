@@ -15,7 +15,7 @@ import img10 from "./media/chicaga/10.jpg";
 import img11 from "./media/chicaga/11.jpg";
 import img12 from "./media/chicaga/12.jpg";
 
-export const Chicaga: React.FunctionComponent = () => (
+export const Chicaga: React.FC = () => (
   <div className={cn.projectsContent}>
     <Menu
       name={"CHICAGA"}
