@@ -9,13 +9,13 @@ interface Props {
   sourceLink?: string;
 }
 export const Menu: React.FC<Props> = (props) => (
-  <div className={cn["menu"]}>
-    <div className={cn["description-block"]}>
-      <div className={cn["description-header"]}>{props.name}</div>
+  <div className={cn.menu}>
+    <div className={cn.descriptionBlock}>
+      <div className={cn.descriptionHeader}>{props.name}</div>
       <div
-        className={cn["description-city"]}
+        className={cn.descriptionCity}
       >{`${props.city} | ${props.year}`}</div>
-      <div className={cn["description"]}>
+      <div className={cn.description}>
         _<br />
         <br />
         {props.description}
@@ -23,9 +23,9 @@ export const Menu: React.FC<Props> = (props) => (
         _<br />
       </div>
       {props.sourceLink && (
-        <div className={cn["source-link-wrapper"]}>
+        <div className={cn.sourceLinkWrapper}>
           <a
-            className={cn["source-link"]}
+            className={cn.sourceLink}
             href={props.sourceLink}
             target="_blank"
             rel="noreferrer"
@@ -35,7 +35,7 @@ export const Menu: React.FC<Props> = (props) => (
         </div>
       )}
     </div>
-    <div className={cn["author"]}>
+    <div className={cn.author}>
       Дарина Лачихина
       <br /> дизайнер
     </div>
